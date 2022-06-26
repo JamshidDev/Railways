@@ -1,32 +1,58 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
-  </div>
+  <v-app class="overflow-y-visible">
+    <v-main>
+      <router-view />
+    </v-main>
+  </v-app>
 </template>
 
+<script>
+import { mapActions } from "vuex";
+export default {
+  name: "App",
+  data() {
+    return {};
+  },
+  created() {
+    window.addEventListener("scroll", this.handleScroll);
+    window.addEventListener("resize", this.reportWindowSize);
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.handleScroll);
+    window.addEventListener("resize", this.reportWindowSize);
+  },
+  methods: {
+    ...mapActions([
+      "set_appScrollX",
+      "set_appScrollY",
+      "set_screenWidth",
+      "set_screenHeight",
+    ]),
+    handleScroll() {
+      this.set_appScrollX(window.scrollX);
+      this.set_appScrollY(window.scrollY);
+    },
+    reportWindowSize(event) {
+      this.set_screenWidth(event.currentTarget.innerWidth);
+      this.set_screenHeight(event.currentTarget.innerHeight);
+    },
+  },
+};
+</script>
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+* {
+  font-family: "Montserrat", sans-serif !important;
+}
+.banner_bg {
+  background: url("https://www.railway.uz/local/templates/main_v2/img/footer-bg.jpg");
+}
+.banner_title {
+  width: 100%;
+  font-size: 34px;
+  font-weight: 700;
+  color: #41b983;
+  text-transform: uppercase;
   text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
 }
 </style>
