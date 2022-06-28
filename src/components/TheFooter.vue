@@ -70,19 +70,19 @@
       <h3 class="footer_contact_title mb-12">Asosiy</h3>
 
       <div class="contact_content mb-4">
-        <a href="#">Rahbariyat</a>
+        <router-link to="/leaders">Rahbariyat</router-link>
       </div>
       <div class="contact_content mb-4">
-        <a href="#">Ko'p so'raladigan savollar</a>
+        <router-link to="/services">Ko'p so'raladigan savollar</router-link>
       </div>
       <div class="contact_content mb-4">
-        <a href="#">Ochiq ma'lumotlar </a>
+        <router-link to="/services">Ochiq ma'lumotlar</router-link>
       </div>
       <div class="contact_content mb-4">
-        <a href="#">Funksiya va vazifalar </a>
+        <router-link to="/functional">Funksiya va vazifalar</router-link>
       </div>
       <div class="contact_content mb-4">
-        <a href="#">Murojat yuborish</a>
+        <router-link to="/services">Murojat yuborish</router-link>
       </div>
     </v-col>
     <v-col

@@ -81,7 +81,7 @@ export default {
           subtitle:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recte dicis; Ita enim vivunt quidam, ut eorum vita refellatur oratio. Sed tament.",
           icon: "mdi mdi-file-document-edit",
-          cardURL: "/card-url",
+          cardURL: "/reference",
         },
         {
           id: 2,

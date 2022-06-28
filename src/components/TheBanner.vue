@@ -2,7 +2,7 @@
   <div class="banner_bg">
     <v-container>
       <v-row>
-        <v-col cols="12" class="d-flex justify-center pt-16">
+        <v-col cols="12" class="d-flex justify-center pt-16 mb-16 pb-16">
           <div class="banner_container mt-16">
             <span class="banner_title">O'zbekiston temir yo'llari</span>
             <span class="banner_subtitle">Aksiyadorlik Jamiyati</span>
@@ -23,17 +23,10 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-.banner_bg {
-  width: 100%;
-  background: url("https://www.railway.uz/local/templates/main_v2/img/footer-bg.jpg");
-  height: 800px;
-  display: flex;
-  justify-content: center;
-}
 .banner_container {
   width: 100%;
   padding: 100px 200px;
-  background: url("https://www.railway.uz/local/templates/main_v2/img/files/banner-bg.jpg");
+  background: url("../assets/peopleAvatar/banner_footer.svg");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -76,7 +69,7 @@ export default {};
   & > .banner_subtitle {
     position: absolute;
     top: 80px;
-    left: 30px;
+    left: 200px;
     color: #ffffff;
     font-size: 30px;
     text-transform: uppercase;

@@ -13,6 +13,8 @@ import StationPage from "@/views/StationPage";
 import StructureCompanyPage from "@/views/StructureCompanyPage";
 import FunctionalPage from "@/views/FunctionalPage";
 import HistoryPage from "@/views/HistoryPage";
+import ReferencePage from "@/views/ReferencePage";
+import SmsValidatePage from "@/views/SmsValidatePage";
 
 Vue.use(VueRouter);
 
@@ -77,6 +79,16 @@ const routes = [
         path: "/history",
         name: "history",
         component: HistoryPage,
+      },
+      {
+        path: "/reference",
+        name: "reference",
+        component: ReferencePage,
+      },
+      {
+        path: "/smsvalidate",
+        name: "smsvalidate",
+        component: SmsValidatePage,
       },
     ],
   },

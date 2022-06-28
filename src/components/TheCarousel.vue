@@ -13,18 +13,33 @@
 </template>
 
 <script>
+import banner_1 from "@/assets/peopleAvatar/banner_1.svg";
+import banner_2 from "@/assets/peopleAvatar/banner_2.png";
+import banner_6 from "@/assets/peopleAvatar/banner_6.svg";
+import banner_7 from "@/assets/peopleAvatar/banner_7.svg";
+import banner_8 from "@/assets/peopleAvatar/banner_8.svg";
+import banner_9 from "@/assets/peopleAvatar/banner_9.svg";
 export default {
   data() {
     return {
       items: [
         {
-          src: "https://qarshimtu.uz/76674307957461.jpg",
+          src: banner_2,
         },
         {
-          src: "https://qarshimtu.uz/76674307957461.jpg",
+          src: banner_1,
         },
         {
-          src: "https://www.railway.uz/local/templates/main_v2/img/files/main-bg.webp",
+          src: banner_6,
+        },
+        {
+          src: banner_7,
+        },
+        {
+          src: banner_8,
+        },
+        {
+          src: banner_9,
         },
       ],
     };
@@ -54,17 +69,17 @@ export default {
 .overflow-sheet-dark {
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-      325.56deg,
-      #00a795 -22.1%,
-      rgba(0, 167, 149, 0.96875) -0.69%,
-      rgba(0, 167, 149, 0) 33.13%
-    ),
-    linear-gradient(
-      160.3deg,
-      #00a795 -16.93%,
-      rgba(0, 167, 149, 0.96875) -7.7%,
-      rgba(0, 167, 149, 0) 48.72%
-    );
+  // background: linear-gradient(
+  //     325.56deg,
+  //     #00a795 -22.1%,
+  //     rgba(0, 167, 149, 0.96875) -0.69%,
+  //     rgba(0, 167, 149, 0) 33.13%
+  //   ),
+  //   linear-gradient(
+  //     160.3deg,
+  //     #00a795 -16.93%,
+  //     rgba(0, 167, 149, 0.96875) -7.7%,
+  //     rgba(0, 167, 149, 0) 48.72%
+  //   );
 }
 </style>

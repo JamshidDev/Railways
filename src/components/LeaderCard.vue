@@ -2,12 +2,20 @@
   <div class="leader_card_container">
     <div class="card_header">
       <div class="header_img">
-        <img :src="user_img" :lazy-src="user_img" alt="" />
+        <img
+          :src="user_img"
+          width="100%"
+          height="auto"
+          :lazy-src="user_img"
+          alt=""
+        />
       </div>
       <div class="header_title pt-6">
         {{ user_position }}
       </div>
-      <div class="header_subtitle pt-2">{{ user_fullname }}</div>
+      <div class="header_subtitle font-weight-bold pt-2">
+        {{ user_fullname }}
+      </div>
     </div>
     <div class="card_body pt-8">
       <div class="body_text">
@@ -66,8 +74,8 @@ export default {
 
     & > .header_title {
       width: 100%;
-      font-size: 20px;
-      font-weight: 600;
+      font-size: 18px;
+      font-weight: 500;
       color: #41b983;
       text-transform: uppercase;
     }

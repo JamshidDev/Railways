@@ -6,7 +6,14 @@
       </v-col>
     </v-row>
     <v-row justify="center">
-      <v-col cols="12" sm="12" md="6" lg="4" xl="4" class="mb-6">
+      <v-col
+        cols="12"
+        sm="6"
+        md="4"
+        lg="4"
+        xl="4"
+        class="mb-6 px-16 px-lg-2 px-md-0"
+      >
         <leader-card-vue
           :user_id="leaders[0].id"
           :user_img="leaders[0].avatar"
@@ -21,8 +28,15 @@
         ></leader-card-vue>
       </v-col>
     </v-row>
-    <v-row justify="center" class="pb-16">
-      <v-col cols="12" sm="12" lg="4" md="5" xl="4" class="mb-6">
+    <v-row justify="center" justify-md="space-beetwen" class="pb-16">
+      <v-col
+        cols="12"
+        sm="6"
+        lg="4"
+        md="5"
+        xl="4"
+        class="mb-6 px-16 px-lg-2 px-md-0"
+      >
         <leader-card-vue
           :user_id="leaders[1].id"
           :user_img="leaders[1].avatar"
@@ -36,7 +50,14 @@
           @openDialog="autoOpenDialog($event)"
         ></leader-card-vue>
       </v-col>
-      <v-col cols="12" sm="12" lg="4" md="5" xl="4" class="mb-6">
+      <v-col
+        cols="12"
+        sm="6"
+        lg="4"
+        md="5"
+        xl="4"
+        class="mb-6 px-16 px-lg-2 px-md-0"
+      >
         <leader-card-vue
           :user_id="leaders[2].id"
           :user_img="leaders[2].avatar"
@@ -80,6 +101,7 @@
 
 <script>
 import LeaderCardVue from "@/components/LeaderCard.vue";
+import avatar_1 from "@/assets/peopleAvatar/avatar_1.svg";
 export default {
   components: {
     LeaderCardVue,
@@ -92,13 +114,13 @@ export default {
       leaders: [
         {
           id: 0,
-          position_place: `"QARSHI MINTAQAVIY TEMIR YO'L UZELI" UK BOSHLIG'I`,
-          fullName: "Norqabilov Sirojiddin Anvarovich",
+          position_place: `O'TY AJ Personalni boshqarish va kadrlarni tayorlash boshqarmasi boshlig'i`,
+          fullName: "To'xtayev Vahobjon Husenovich",
           phone: 995016004,
-          phoneText: "+998(99)5016004",
-          email: "raximovj662@gmail.com",
-          visitTime: "Qabul kunlari: Har kuni | 08:00-11:00",
-          avatar: "https://qarshimtu.uz/67342247432561.jpg",
+          phoneText: "+998(71)2388795",
+          email: "vahobjonhusenovich@gmail.com",
+          visitTime: "Qabul kunlari: Seshanba, Payshanba | 15:00-18:00",
+          avatar: avatar_1,
           obligations: ` Uzel faoliyati va uning ijro etuvchi apparatining umumiy
               boshqaruvini amalga oshiradi; "O'zbekiston temir yo'llari"AJ nizom
               talablari va uzelga yuklangan vazifalarni bajarishga shaxsan
@@ -145,13 +167,13 @@ export default {
         },
         {
           id: 1,
-          position_place: `"QARSHI MINTAQAVIY TEMIR YO'L UZELI" UK BOSHLIG'I`,
-          fullName: "Norqabilov Sirojiddin Anvarovich",
+          position_place: `O'TY AJ Personalni boshqarish va kadrlarni tayorlash boshqarmasi boshlig'i o'rinbosari`,
+          fullName: "Saidova Feruza Anvarovna",
           phone: 995016004,
-          phoneText: "+998(99)5016004",
+          phoneText: "+998(71)2388795",
           email: "raximovj662@gmail.com",
-          visitTime: "Qabul kunlari: Har kuni | 08:00-11:00",
-          avatar: "https://qarshimtu.uz/67342247432561.jpg",
+          visitTime: "Qabul kunlari: Har kuni | 09:00-18:00",
+          avatar: avatar_1,
           obligations: ` Uzel faoliyati va uning ijro etuvchi apparatining umumiy
               boshqaruvini amalga oshiradi; "O'zbekiston temir yo'llari"AJ nizom
               talablari va uzelga yuklangan vazifalarni bajarishga shaxsan
@@ -198,13 +220,13 @@ export default {
         },
         {
           id: 2,
-          position_place: `"QARSHI MINTAQAVIY TEMIR YO'L UZELI" UK BOSHLIG'I`,
-          fullName: "Fazilov Shuxrat Anvarovich",
+          position_place: `O'TY AJ Personalni boshqarish va kadrlarni tayorlash boshqarmasi boshlig'i o'rinbosari`,
+          fullName: "Fazilov Shuxrat Shavkatovich",
           phone: 995016004,
-          phoneText: "+998(99)5016004",
-          email: "raximovj662@gmail.com",
-          visitTime: "Qabul kunlari: Har kuni | 08:00-11:00",
-          avatar: "https://qarshimtu.uz/67342247432561.jpg",
+          phoneText: "+998(71)2388080",
+          email: "fazilovsh@gmail.com",
+          visitTime: "Qabul kunlari: Har kuni | 09:00-18:00",
+          avatar: avatar_1,
           obligations: ` Uzel faoliyati va uning ijro etuvchi apparatining umumiy
               boshqaruvini amalga oshiradi; "O'zbekiston temir yo'llari"AJ nizom
               talablari va uzelga yuklangan vazifalarni bajarishga shaxsan
