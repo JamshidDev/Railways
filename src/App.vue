@@ -44,6 +44,10 @@ export default {
 * {
   font-family: "Montserrat", sans-serif !important;
 }
+.font-montserrat {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif !important;
+}
 .banner_bg {
   background: url("https://www.railway.uz/local/templates/main_v2/img/footer-bg.jpg");
 }
@@ -54,5 +58,6 @@ export default {
   color: #41b983;
   text-transform: uppercase;
   text-align: center;
+  font-family: "Montserrat", sans-serif !important;
 }
 </style>

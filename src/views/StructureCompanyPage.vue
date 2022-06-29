@@ -8,10 +8,10 @@
         <v-card>
           <v-card-text>
             <v-img
-              lazy-src="https://qarshimtu.uz/client/img/icons/structure_uz.jpg"
+              :lazy-src="structureImg"
               max-height="auto"
               max-width="100%"
-              src="https://qarshimtu.uz/client/img/icons/structure_uz.jpg"
+              :src="structureImg"
             ></v-img>
           </v-card-text>
         </v-card>
@@ -21,7 +21,14 @@
 </template>
 
 <script>
-export default {};
+import structureComppany from "@/assets/peopleAvatar/structureComppany.png";
+export default {
+  data() {
+    return {
+      structureImg: structureComppany,
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>

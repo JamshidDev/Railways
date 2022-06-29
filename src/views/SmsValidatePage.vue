@@ -2,7 +2,7 @@
   <v-container fluid style="padding: 0px" class="banner_bg">
     <v-row class="py-16" justify-lg="center">
       <v-col cols="12">
-        <v-form ref="user_reference">
+        <v-form ref="sms_validate">
           <v-container>
             <v-col cols="12" lg="12" class="mb-16 px-0">
               <v-card elevation="0" class="white lighten-3 mx-0">
@@ -22,10 +22,10 @@
               </v-card>
             </v-col>
             <v-row class="white py-6 px-4" justify="center">
-              <v-col cols="12" md="6" lg="4" xl="4">
+              <v-col cols="12" sm="6" md="4" lg="4" xl="4">
                 <v-text-field
-                  v-model="user.fullName"
-                  :rules="fullNameRules"
+                  v-model="smsCode"
+                  :rules="codRules"
                   label="Tasdiqlash kodini kiriting"
                   required
                   dense
@@ -33,19 +33,12 @@
                   color="primary"
                 ></v-text-field>
               </v-col>
-              <v-col lg="12" class="d-flex justify-space-between">
+              <v-col cols="12" class="d-flex justify-space-between">
+                <v-btn width="auto" outlined color="warning"> Orqaga </v-btn>
                 <v-btn
                   width="auto"
                   outlined
-                  @click="sendReference()"
-                  color="error"
-                >
-                  Bekor qilish
-                </v-btn>
-                <v-btn
-                  width="auto"
-                  outlined
-                  @click="sendReference()"
+                  @click="smsValidate()"
                   color="primary"
                 >
                   Tasdiqlash
@@ -55,6 +48,19 @@
           </v-container>
         </v-form>
       </v-col>
+      <v-col cols="12">
+        <v-alert
+          :value="alert"
+          :color="alertColor"
+          dark
+          border="top"
+          :icon="alertIcon"
+          transition="scale-transition"
+          width="auto"
+          class="postisoin_top"
+          >{{ alertText }}
+        </v-alert>
+      </v-col>
     </v-row>
   </v-container>
 </template>
@@ -63,36 +69,60 @@
 export default {
   data() {
     return {
-      user: {
-        fullName: "",
-        adress: "",
-        phone: "",
-        email: "",
-        referenceText: "",
-      },
+      smsCode: "",
+      alertColor: null,
+      alertText: null,
+      alertIcon: null,
+      alert: false,
 
-      fullNameRules: [(v) => !!v || "Ism kiritilishi shart"],
-      adressRules: [(v) => !!v || "Manzil kiritilishi shart"],
-      referenceRules: [(v) => !!v || "Murojat kiritilishi shart"],
-      phoneRules: [
-        (v) => !!v || "Telefon raqam kiritilishi shart",
-        (v) => /^998[1-9]{2}[0-9]{7}$/.test(v) || "Namuna 998995016004",
+      codRules: [
+        (v) => !!v || "Kod kiritilishi shart",
+        (v) => v.length == 4 || "Kod 4 ta raqamdan iborat bo'lishi shart",
       ],
     };
   },
 
   methods: {
-    sendReference() {
-      if (this.$refs.user_reference.validate()) {
-        console.log(this.user);
+    smsValidate() {
+      if (this.$refs.sms_validate.validate()) {
+        // success message
+        // this.controlAlert(
+        //   "green",
+        //   "Murojat muvofaqiyatli rasmiylashtirildi",
+        //   "mdi-shield-check",
+        //   3000
+        // );
+
+        // error message
+        this.controlAlert(
+          "error",
+          "Notog'ri tasdiqlash kodi",
+          "mdi-alert-circle",
+          3000
+        );
       } else {
         setTimeout(() => {
           this.$refs.user_reference.resetValidation();
         }, 3000);
       }
     },
+    controlAlert(color, text, icon, time) {
+      this.alertIcon = icon;
+      this.alertColor = color;
+      this.alertText = text;
+      this.alert = true;
+      setTimeout(() => {
+        this.alert = false;
+      }, time);
+    },
   },
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.postisoin_top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+</style>

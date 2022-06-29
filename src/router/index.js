@@ -15,6 +15,7 @@ import FunctionalPage from "@/views/FunctionalPage";
 import HistoryPage from "@/views/HistoryPage";
 import ReferencePage from "@/views/ReferencePage";
 import SmsValidatePage from "@/views/SmsValidatePage";
+import AllNewsPage from "@/views/AllNewsPage";
 
 Vue.use(VueRouter);
 
@@ -43,6 +44,11 @@ const routes = [
         path: "/news",
         name: "news",
         component: NewsPage,
+      },
+      {
+        path: "/allnews",
+        name: "allnews",
+        component: AllNewsPage,
       },
       // submenu router
       {

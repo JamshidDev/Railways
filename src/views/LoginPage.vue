@@ -4,8 +4,9 @@
       <v-row class="min_height_screen" justify-lg="center">
         <v-col
           lg="8"
+          xl="8"
           md="7"
-          class="login_banner d-xl-none d-none d-lg-flex d-md-flex justify-center align-center"
+          class="login_banner d-xl-none d-none d-lg-flex d-md-flex d-xl-flex justify-center align-center"
         >
           <div class="login_logo_container">
             <img
@@ -17,7 +18,7 @@
             <div class="logo_subtitle">Aksiyadorlik jamiyati</div>
           </div>
         </v-col>
-        <v-col lg="4" sm="12" cols="12" md="5" class="px-sm-16 pt-sm-16">
+        <v-col xl="4" lg="4" sm="12" cols="12" md="5" class="px-sm-16 pt-sm-16">
           <v-form v-model="valid">
             <v-container>
               <v-row justify-lg="center">

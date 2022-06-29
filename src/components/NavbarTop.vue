@@ -73,7 +73,7 @@
             </div>
             <div class="submenu_item" @click="closeNavbar()">
               <router-link to="/history" class="submenu_link_items"
-                >MTU tarixi</router-link
+                >O'TY AJ tarixi</router-link
               >
             </div>
           </div>
@@ -364,7 +364,7 @@ export default {
     overflow: hidden;
     position: relative;
     width: 100%;
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
     & > .submenu_container {
       width: 100%;
       & > .submenu_item {

@@ -72,11 +72,12 @@ export default {
       }
     }
 
-    & > .header_title {
+    & > .header_title,
+    .header_subtitle {
       width: 100%;
-      font-size: 18px;
-      font-weight: 500;
-      color: #41b983;
+      font-size: 16px;
+      font-weight: 600;
+      color: #111111;
       text-transform: uppercase;
     }
   }
