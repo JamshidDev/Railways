@@ -10,9 +10,15 @@
         ></v-img>
       </v-col>
       <v-col cols="8" class="d-flex flex-column">
-        <div class="recently_subtitle font-weight-medium link">
-          {{ title }}
-        </div>
+        <v-hover v-slot="{ hover }">
+          <div
+            class="recently_subtitle font-weight-medium link"
+            @click="currentNews(id)"
+            :class="hover && 'text-decoration-underline'"
+          >
+            {{ title }}
+          </div>
+        </v-hover>
         <v-btn text color="green" class="text-caption font-weight-medium">
           <v-icon color="green" class="mr-2">{{ dateIcon }}</v-icon>
           {{ date }}
@@ -24,16 +30,24 @@
 
 <script>
 import { mdiCalendarRange } from "@mdi/js";
+import { mapActions } from "vuex";
 export default {
   props: {
     title: String,
     picture: String,
     date: String,
+    id: Number,
   },
   data() {
     return {
       dateIcon: mdiCalendarRange,
     };
+  },
+  methods: {
+    ...mapActions(["set_currentlyNews"]),
+    currentNews(id) {
+      this.set_currentlyNews(id);
+    },
   },
 };
 </script>

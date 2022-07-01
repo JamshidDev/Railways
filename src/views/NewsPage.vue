@@ -7,7 +7,7 @@
     </v-row>
     <v-row class="white pt-4 mb-4">
       <v-col cols="12" lg="8" xl="8" md="7">
-        <news-banner></news-banner>
+        <news-banner :newsItem="get_currentlyNews"></news-banner>
       </v-col>
       <v-col
         cols="12"
@@ -20,11 +20,12 @@
           So'ngi yalgiliklar
         </div>
         <news-mini-card
-          v-for="(item, i) in newsList"
+          v-for="(item, i) in get_recentlyNews"
           :key="i"
           :title="item.title"
           :date="item.date"
-          :picture="item.pic"
+          :picture="item.picture"
+          :id="item.id"
         ></news-mini-card>
         <v-btn
           color="green"
@@ -44,72 +45,37 @@
 <script>
 import NewsBanner from "@/components/NewsBanner.vue";
 import NewsMiniCard from "@/components/NewsMiniCard.vue";
+import { mapGetters, mapActions } from "vuex";
 export default {
   components: {
     NewsBanner,
     NewsMiniCard,
   },
   data() {
-    return {
-      newsList: [
-        {
-          title: `"Ilg'or tajriba maktabi" mavzusida seminar-trening`,
-          date: `25-August-2021`,
-          pic: `https://qarshimtu.uz/38127533664561.jpg`,
-        },
-        {
-          title: `Yurtimizdagi yirik eksportyor korxonalar mas'ullari bilan uchrashuv`,
-          date: `25-Mart-2022`,
-          pic: `https://qarshimtu.uz/99819751514561.jpg`,
-        },
-        {
-          title: `"Yagona darcha" dasturidan foydalanish bo'yicha yig'ilish o'tkazildi`,
-          date: `25-August-2021`,
-          pic: `https://qarshimtu.uz/93018656414561.jpg`,
-        },
-        {
-          title: `"Ilg'or tajriba maktabi" mavzusida seminar-trening`,
-          date: `25-August-2021`,
-          pic: `https://qarshimtu.uz/38127533664561.jpg`,
-        },
-        {
-          title: `Yurtimizdagi yirik eksportyor korxonalar mas'ullari bilan uchrashuv`,
-          date: `25-Mart-2022`,
-          pic: `https://qarshimtu.uz/99819751514561.jpg`,
-        },
-        {
-          title: `"Yagona darcha" dasturidan foydalanish bo'yicha yig'ilish o'tkazildi`,
-          date: `25-August-2021`,
-          pic: `https://qarshimtu.uz/93018656414561.jpg`,
-        },
-        {
-          title: `"Yagona darcha" dasturidan foydalanish bo'yicha yig'ilish o'tkazildi`,
-          date: `25-August-2021`,
-          pic: `https://qarshimtu.uz/93018656414561.jpg`,
-        },
-        {
-          title: `"Ilg'or tajriba maktabi" mavzusida seminar-trening`,
-          date: `25-August-2021`,
-          pic: `https://qarshimtu.uz/38127533664561.jpg`,
-        },
-        {
-          title: `Yurtimizdagi yirik eksportyor korxonalar mas'ullari bilan uchrashuv`,
-          date: `25-Mart-2022`,
-          pic: `https://qarshimtu.uz/99819751514561.jpg`,
-        },
-        {
-          title: `"Yagona darcha" dasturidan foydalanish bo'yicha yig'ilish o'tkazildi`,
-          date: `25-August-2021`,
-          pic: `https://qarshimtu.uz/93018656414561.jpg`,
-        },
-      ],
-    };
+    return {};
+  },
+  created() {
+    this.changeNews();
+    this.set_recentlyNews();
+  },
+  computed: {
+    ...mapGetters(["get_currentlyNews", "get_recentlyNews"]),
   },
   methods: {
+    ...mapActions(["set_currentlyNews", "set_recentlyNews"]),
     pushRouter() {
       this.$router.push("/allnews");
     },
+    changeNews() {
+      let id = this.$route.params.id;
+      if (id == 0) {
+        this.set_currentlyNews();
+      } else {
+        this.set_currentlyNews(id);
+      }
+    },
   },
+  mounted() {},
 };
 </script>
 

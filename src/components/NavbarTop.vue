@@ -23,7 +23,7 @@
           >
         </div>
         <div class="navbar_content" @click="closeNavbar()">
-          <router-link to="/news" class="navbar_item_link"
+          <router-link to="/news/0" class="navbar_item_link"
             >Yangiliklar</router-link
           >
         </div>
