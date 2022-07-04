@@ -2,7 +2,15 @@
   <v-container>
     <v-row class="mb-16">
       <v-col cols="12" class="mb-10">
-        <h3 class="news_title">Fotogalereya</h3>
+        <v-hover v-slot="{ hover }">
+          <h3
+            class="news_title cursor_hover_pointer"
+            :class="hover && 'text-decoration-underline'"
+            @click="pushToGallery()"
+          >
+            Fotogalereya
+          </h3>
+        </v-hover>
       </v-col>
       <v-col cols="12" class="d-flex justify-center mb-16">
         <swiper
@@ -19,7 +27,7 @@
           }"
         >
           <swiper-slide v-for="book in books" :key="book.id">
-            <div class="slide_img_container mb-16">
+            <div class="slide_img_container mb-16" @click="pushToGallery()">
               <img :src="getImageUrl()" class="img-fluid" blank="true" />
             </div>
           </swiper-slide>
@@ -114,6 +122,9 @@ export default {
     onSwiper(swiper) {},
     onSlideChange() {},
     breakpoint() {},
+    pushToGallery() {
+      this.$router.push("/gallery");
+    },
   },
 };
 </script>

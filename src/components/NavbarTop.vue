@@ -390,7 +390,7 @@ export default {
   box-shadow: -1px 3px 10px 0 rgb(0 0 0 / 6%);
   top: 10px;
   position: fixed;
-  z-index: 9999;
+  z-index: 200;
   width: calc(100% - 40px) !important;
   margin: 0px auto;
   background-color: white;

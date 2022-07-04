@@ -2,7 +2,7 @@
   <div class="card_container">
     <div class="card_content">
       <span class="content_date"> 06/07/2022</span>
-      <span class="content_view"> Batafsil... </span>
+      <span class="content_view" @click="pushToNews(2)"> Batafsil... </span>
       <img
         class="card_picture"
         src="https://qarshimtu.uz/38127533664561.jpg"
@@ -16,7 +16,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    pushToNews(id) {
+      this.$router.push(`/news/${id}`);
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>

@@ -22,7 +22,7 @@
             <div class="card_title mb-4">{{ book.title }}</div>
             <div class="card_content mb-10">
               <div class="card_logo">
-                <img :src="book.logo_url" alt="" />
+                <v-img :src="book.logo_url" alt="" class="rounded" />
               </div>
               <div class="card_link">
                 <a :href="book.fullURL">{{ book.link }} </a>
@@ -80,6 +80,13 @@ export default {
           link: "www.soliq.uz",
           fullURL: "https://soliq.uz/",
           logo_url: "https://qarshimtu.uz/client/img/avatars/port2.png",
+        },
+        {
+          id: 5,
+          title: `“O‘zbekiston Respublikasi Qonun hujjatlari  ma’lumotlari Milliy bazasi”`,
+          link: "www.Lex.uz",
+          fullURL: "https://lex.uz/",
+          logo_url: "https://lex.uz/assets/img/lex_uz.svg",
         },
       ],
     };

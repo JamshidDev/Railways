@@ -80,8 +80,7 @@
               {{ dialogTitle }}
             </v-card-title>
 
-            <v-card-text class="pt-4 font-weight-bold">
-              {{ dialogText }}
+            <v-card-text v-html="dialogText" class="pt-4 font-weight-medium">
             </v-card-text>
 
             <v-divider></v-divider>
@@ -118,7 +117,7 @@ export default {
           position_place: `O'TY AJ Personalni boshqarish va kadrlarni tayorlash boshqarmasi boshlig'i`,
           fullName: "To'xtayev Vahobjon Husenovich",
           phone: 995016004,
-          phoneText: "+998(71)2388795",
+          phoneText: "+998(71) 238-87-95",
           email: "vahobjonhusenovich@gmail.com",
           visitTime: "Qabul kunlari: Seshanba, Payshanba | 15:00-18:00",
           avatar: avatar_2,
@@ -140,13 +139,27 @@ export default {
               qilish va hal qilishda adolatlilik prinsipini, iqtisodiy va
               ma'muriy boshqaruv usullarining kombinatsiyasini, buyruqning
               birligini va ahil jamoa prinsipini ta'minlaydi.`,
-          biography: `12 avgust 1983 yil Buxoro viloyati Olot tumani jayxunobod MFY 167 uyda tug’ulganman. Otam To’xtayev Xusen Xudoyberdiyev 3-noyabr 1958 yil Buxoro viloyati Olot tumanida tug’ulgan. Olot to’quv fabrikasida kassir lavozimida ishlaganlar. 2001 yilda vafot etgan.
-Onam To’xtayeva (Bozorova) Bozorgul Yog’mirovna  27-sentyabr 1960 yilda Buxoro viloyati Olot tumanida tug’ilgan. M.Hamrayev fermer xo’jaligida ishlaganlar, hozirgi kunda nafaqada.
-Ma’lumotim oliy 2005 yil Toshkent temir yo’llari muhandislari institutining bakalavr yo’nalishida Transport vositalarini ishlatish va ta’mirlash muhandisi, 2007 yil maskur Oligohning magistrature yo’nalishining Xalqaro yuklar tashish yo’nalishini tugatganman.
-2007 yil Osiyo temir yo’llar sug’urtalash kompaniyasining agenti, 2007-2013 yillarda Toshkent temir yo’llar muhandislar institute asistenti, Loyihalar chiqarish bo’limiga mehanik, 2013-2015 yillarda Toshkent temir yo’l masofasi muhandisi, 
-2013-2014 yillarda Meterologiya va Sertifikatsiya muhandisi, 2014-2015 yillarda Iqtisodchi muhandis, 2015-2017 yillarda 203 Tajriba yo’l mashina stansiyasi iqtisodchisi,  2017 yilda “Ekskavatorlar va gusenitsali mehanikani ta’mirlash zavodi” unitar korxonasi, Kadrlar va Ijtimoiy masalalar bo’yicha bo’lim boshlig’I, 2017-2021 yillarda Ishlab chiqarish bo’yicha direktor o’rinbosari lavozimida ishlaganman.
-2010 yilda Pedagog grashlar dasturi Diplomi, 2014 yil yosh mutahassislar Respublika tanlovida ishtirokim uchun sertifikat bilan taqdirlandim.
-Oilaliman, ikki nafar farzandning otasiman. Muqaddam sudlanmaganman.
+          biography: `1983 yilda Buxoro viloyati Olot tumanida tug’ilganman.
+<p class=”m-0 my-1”>Millatim-O’zbek.</p>
+<p class=”m-0 my-1”>Ma’lumotim-Oliy. </p>
+
+<p class=”m-0 my-1”>2005 Toshkent temir yo'l transporti muhandislari institutini  Tashishni tashkil etish va boshqarish yo’nalishini tugatganman</p>
+
+<p class=”m-0 my-1”>2007 Toshkent temir yo'l transporti muhandislari institutini  Xalqaro yuklar tashish bo’yicha magistraturani tamomlagan.<p>
+
+
+<p class=”m-0 my-1”>2007-2007- yillar Osiyo temir yo'llar sug'urta kompaniyasi agenti</p>
+<p class=”m-0 my-1”>2007-2008-yillar Toshkent temir yo'llar muhandislar instituti "Yuk tijorat ishlari texnologiyasi va stansiyalari" kafedrasi assistenti</p>
+<p class=”m-0 my-1”>2008-2009-yillarToshkent temir yo'llar muhandislar instituti "Yuk tijorat ishlari texnologiyasi va statnsiyalar " kafedrasi  assistenti </p>
+<p class=”m-0 my-1”>2009-2013-yillar Toshkent temir yo'llar muhandislar instituti "Yuk tijorat ishlari texnologiyasi va statnsiyalar " kafedrasi  assistenti</p>
+<p class=”m-0 my-1”>2013-2013-yillar "O'zbekiston temir yo'llari" DATK Toshkent temir yo'l masofasi loyihalar  chiqarish bo'limi texnigi</p>
+<p class=”m-0 my-1”>2013-2015-yillar "O'zbekiston temir yo'llari"  DATK  Toshkent mintaqaviy temir yo'l uzeli Toshkent temir yo'l masofasi joriy ta'mir muhandisi, metrologiya va sertifikatsiya muhandisi, iqtisodchi muhandis</p>
+<p class=”m-0 my-1”>2015-2017-yillar "O'zbekiston temir yo'llari" AJ 203-tajriba  yo'l mashina stansiyasi iqtisodchi</p>
+<p class=”m-0 my-1”>2017-2018-yillar "O'zbekiston temir yo'llari"  AJ "Ekskavatorlar va gusenitsali texnikani ta'mirlash zavodi" unitar korxonasi kadrlar va ishtimoiy masalalar bo'yicha bo'lim boshlig'i, direktor o'rinbosari vazifasini bajaruvchisi</p>
+<p class=”m-0 my-1”>2018-2021-yillar "O'zbekiston temir yo'llari"  AJ "Ekskavatorlar va gusenitsali texnikani ta'mirlsh zavodi"  unitar korxonasi ishlab chiqarish bo'yicha direktor o'rinbosari</p>
+<p class=”m-0 my-1”>2021-2022-yillar "O'zbekiston temir yo'llari" AJ personalni  boshqarish va kadrlarni tayorlash boshqarmasi boshlig'ining o'rinbosari vazifasini bajaruvchisi, o'rinbosari</p>
+<p class=”m-0 my-1”>2022-yildan "O'zbekiston temir yo'llari" AJ personalni  boshqarish va kadrlar tayorlash boshqarmasi boshlig'i</p>
+
 `,
         },
         {
@@ -154,7 +167,7 @@ Oilaliman, ikki nafar farzandning otasiman. Muqaddam sudlanmaganman.
           position_place: `O'TY AJ Personalni boshqarish va kadrlarni tayorlash boshqarmasi boshlig'i o'rinbosari`,
           fullName: "Saidova Feruza Anvarovna",
           phone: 995016004,
-          phoneText: "+998(71)2388795",
+          phoneText: "+998(71) 238-87-95",
           email: "raximovj662@gmail.com",
           visitTime: "Qabul kunlari: Har kuni | 09:00-18:00",
           avatar: avatar_1,
@@ -176,38 +189,28 @@ Oilaliman, ikki nafar farzandning otasiman. Muqaddam sudlanmaganman.
               qilish va hal qilishda adolatlilik prinsipini, iqtisodiy va
               ma'muriy boshqaruv usullarining kombinatsiyasini, buyruqning
               birligini va ahil jamoa prinsipini ta'minlaydi.`,
-          biography: `1980-yilda Qashqadaryo viloyati Yakkabog‘ tumanida tug‘ilgan.
+          biography: `1981 yilda Farg’ona viloyati Qo’qon shahrida tug’ilganman.
+<p class=”m-0 my-1”>Millatim-O’zbek.</p>
+<p class=”m-0 my-1”>Ma’lumotim-Oliy. </p>
+<p class=”m-0 my-1”>2005 Toshkent temir yo'l transporti muhandislari institutini  Yer usti transporti tizimlari yo’nalishini tugatganman</p>
 
-            Millati – O‘zbek.
+<p class=”m-0 my-1”>1999-2001-yillar "O'zbekiston temir yo'llari" DAK binolar va inshoatlarga xizmat ko'rsatish direksiyasi mutaxassisi</p>
 
-            Ma'lumoti – Oliy.
+<p class=”m-0 my-1”>2001-2001-yillar "O'zbekiston temir yo'llari" DAK lokomotivlardan foydalanish boshqarmasi boshlig'ining kadrlar va ijtimoiy masalalar bo'yicha yordamchisi</p>
 
-            2004-yil Toshkent temir yo‘l muhandislari institutida bakalavr darajasini tamomlagan.
+<p class=”m-0 my-1”>2001-2015-yillar "O'zbekiston temir yo'llari" DAK raisi huzuridagi kotibiyatning ijro etishni nazorat qilish bo'limi noziri, bosh mutaxassisi</p>
 
-            2001-2007 yillar – Qarshi bekati vagonlar tezligini kamaytiruvchi, operator, bekat navbatchisi;
+<p class=”m-0 my-1”>2015-2015-yillar "O'zbekiston temir yo'llari" AJ kadrlar boshqarmasi boshlig'ining o'rinbosari</p>
 
-            2007-2008 yillar –“Qarshi-Termiz” MTU mehnat muhofazasi va texnika xavfsizligi muhandisi, tashish jarayoni texnologiyasini nazorat qilish va o‘qitish yo‘riqchisi;
-
-2008-2010 yillar – Qarshi bekati boshlig‘i o‘rinbosari;
-
-2010-2011 yillar – Qashqadaryo bekati boshlig‘i, Sho'rtan bekati boshlig‘i;
-
-2011-2012 yillar – G‘uzor bekati boshlig‘i;
-
-2012-2017 yillar – “Qarshi MTU” UK yuk va tijorat ishlari bo‘limi boshlig‘i;
-
-2017-yil – Kengsoy bekati boshlig‘i vazifasini vaqtincha bajaruvchi va Kengsoy bekati boshlig‘i;
-
-2017-2018 yillar – “Qarshi MTU” UK boshlig‘i o‘rinbosari - yuk tashish va stansiyalar bilan ishlash bo‘limi boshlig‘i v.b.;
-
-2018-yildan boshlab shu kunga qadar “Qarshi MTU” UK boshlig'i o'rinbosari - yuk tashish va stansiyalar bilan ishlash bo‘limi boshlig‘i.`,
+<p class=”m-0 my-1”>2015-yildan hozirgi kunga qadar "O'zbekiston temir yo'llari"  AJ personalni boshqarish va kadrlar tayyorlash boshqarmasi boshlig'ining o'rinbosari</p>
+`,
         },
         {
           id: 2,
           position_place: `O'TY AJ Personalni boshqarish va kadrlarni tayorlash boshqarmasi boshlig'i o'rinbosari`,
           fullName: "Fazilov Shuxrat Shavkatovich",
           phone: 995016004,
-          phoneText: "+998(71)2388080",
+          phoneText: "+998(71) 238-80-80",
           email: "fazilovsh@gmail.com",
           visitTime: "Qabul kunlari: Har kuni | 09:00-18:00",
           avatar: avatar_1,
@@ -229,31 +232,20 @@ Oilaliman, ikki nafar farzandning otasiman. Muqaddam sudlanmaganman.
               qilish va hal qilishda adolatlilik prinsipini, iqtisodiy va
               ma'muriy boshqaruv usullarining kombinatsiyasini, buyruqning
               birligini va ahil jamoa prinsipini ta'minlaydi.`,
-          biography: `1980-yilda Qashqadaryo viloyati Yakkabog‘ tumanida tug‘ilgan.
+          biography: `1986 yilda Toshkent shahrida tug’ilganman
+<p class=”m-0 my-1”>Millatim-O’zbek</p>
+<p class=”m-0 my-1”>Ma’lumotim-Oliy</p>
 
-            Millati – O‘zbek.
+<p class=”m-0 my-1”>2011 yilda Toshkent temir yo'l transporti muhandislari institutida Transport vositalarini ishlatish va ta'mirlash yo’nalishini tamomlaganman</p>
 
-            Ma'lumoti – Oliy.
+<p class=”m-0 my-1”>2011-2014- yillar O'ztemiryo'lyo'lovchi OAJ Toshkent yo'lovchilar tashishni tashkil etish  Toshkent-Janubiy stansiyasi yo'l bo'yicha navbatchisi, Toshkent-Markaziy stansiyasi yo'l bo'yicha navbatchisi, shu stansiya bo'yicha navbatchisi, fuqaro muxofasi bo'yicha muhandisi</p>
+<p class=”m-0 my-1”>2014-2016- yillar Toshkent-Janubiy stansiyasi boshlig'i vaziasini vaqtincha bajaruvchisi, bosh muhandisi</p>
+<p class=”m-0 my-1”>2016-2017-yillar O'ztemiryo'lyo'lovchi AJ Toshkent-Markaziy Vokzal filiali boshlig'i o'rinbosari </p>
+<p class=”m-0 my-1”>2017-2017-yillar O'ztemiryo'lyo'lovchi AJ Farg'ona filiali Andijon vokzali boshlog'i </p>
+<p class=”m-0 my-1”>2017-2021-yillar O'ztemiryo'lyo'lovchi AJ Toshkent-Janubiy vokzali boshlig'i</p>
+<p class=”m-0 my-1”>2021-2022-yillar O'zbekiston temir yo'llari   AJ personalni boshqarish va kadrlarni tayyorlash boshqarmasining  rahbar  kadrlar  bo'limi  boshlig'i. </p>
 
-            2004-yil Toshkent temir yo‘l muhandislari institutida bakalavr darajasini tamomlagan.
-
-            2001-2007 yillar – Qarshi bekati vagonlar tezligini kamaytiruvchi, operator, bekat navbatchisi;
-
-            2007-2008 yillar –“Qarshi-Termiz” MTU mehnat muhofazasi va texnika xavfsizligi muhandisi, tashish jarayoni texnologiyasini nazorat qilish va o‘qitish yo‘riqchisi;
-
-2008-2010 yillar – Qarshi bekati boshlig‘i o‘rinbosari;
-
-2010-2011 yillar – Qashqadaryo bekati boshlig‘i, Sho'rtan bekati boshlig‘i;
-
-2011-2012 yillar – G‘uzor bekati boshlig‘i;
-
-2012-2017 yillar – “Qarshi MTU” UK yuk va tijorat ishlari bo‘limi boshlig‘i;
-
-2017-yil – Kengsoy bekati boshlig‘i vazifasini vaqtincha bajaruvchi va Kengsoy bekati boshlig‘i;
-
-2017-2018 yillar – “Qarshi MTU” UK boshlig‘i o‘rinbosari - yuk tashish va stansiyalar bilan ishlash bo‘limi boshlig‘i v.b.;
-
-2018-yildan boshlab shu kunga qadar “Qarshi MTU” UK boshlig'i o'rinbosari - yuk tashish va stansiyalar bilan ishlash bo‘limi boshlig‘i.`,
+<p class=”m-0 my-1”>2022-yil fevral oyidan boshlab hozirgi kunga qadar O'zbekiston temir yo'llari AJ personalni boshqarish va kadrlarni tayorlash boshqarmasi o'rinbosari vazifasini bajaruvchisi</p>`,
         },
       ],
     };

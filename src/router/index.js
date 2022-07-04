@@ -18,6 +18,7 @@ import SmsValidatePage from "@/views/SmsValidatePage";
 import AllNewsPage from "@/views/AllNewsPage";
 import AdminPanel from "@/views/AdminPanel";
 import AdminNewsPage from "@/views/AdminNewsPage";
+import GalleryPage from "@/views/GalleryPage";
 Vue.use(VueRouter);
 
 const routes = [
@@ -50,6 +51,11 @@ const routes = [
         path: "/allnews",
         name: "allnews",
         component: AllNewsPage,
+      },
+      {
+        path: "/gallery",
+        name: "gallery",
+        component: GalleryPage,
       },
       // submenu router
       {
