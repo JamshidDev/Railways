@@ -33,7 +33,7 @@
     </div>
     <div class="card_action my-6 d-flex justify-space-between">
       <v-btn color="primary" @click="openDialog()">Tarjimai hol</v-btn>
-      <v-btn color="primary" @click="opentObligations()">Majburiyatlari</v-btn>
+      <v-btn color="primary" @click="opentObligations()">Vazifalari</v-btn>
     </div>
   </div>
 </template>
