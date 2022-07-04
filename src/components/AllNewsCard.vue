@@ -20,7 +20,7 @@
       <v-hover v-slot="{ hover }">
         <div
           @click="pushToNewsPage(id)"
-          class="font-weight-medium font-montserrat mb-2 pt-2"
+          class="font-weight-medium font-montserrat mb-2 pt-2 cursor_hover_pointer"
           :class="hover && 'text-decoration-underline'"
         >
           {{ title }}

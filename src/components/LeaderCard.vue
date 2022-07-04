@@ -2,13 +2,22 @@
   <div class="leader_card_container">
     <div class="card_header">
       <div class="header_img">
-        <img
+        <v-img
           :src="user_img"
           width="100%"
           height="auto"
           :lazy-src="user_img"
-          alt=""
-        />
+          :aspect-ratio="1 / 1"
+        >
+          <template v-slot:placeholder>
+            <v-row class="fill-height ma-0" align="center" justify="center">
+              <v-progress-circular
+                indeterminate
+                color="grey lighten-5"
+              ></v-progress-circular>
+            </v-row>
+          </template>
+        </v-img>
       </div>
       <div class="header_title pt-6">
         {{ user_position }}

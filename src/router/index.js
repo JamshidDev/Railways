@@ -16,7 +16,8 @@ import HistoryPage from "@/views/HistoryPage";
 import ReferencePage from "@/views/ReferencePage";
 import SmsValidatePage from "@/views/SmsValidatePage";
 import AllNewsPage from "@/views/AllNewsPage";
-
+import AdminPanel from "@/views/AdminPanel";
+import AdminNewsPage from "@/views/AdminNewsPage";
 Vue.use(VueRouter);
 
 const routes = [
@@ -95,6 +96,19 @@ const routes = [
         path: "/smsvalidate",
         name: "smsvalidate",
         component: SmsValidatePage,
+      },
+    ],
+  },
+  // Admin panel
+  {
+    path: "/admin",
+    name: "admin",
+    component: AdminPanel,
+    children: [
+      {
+        path: "/admin/news",
+        name: "admin",
+        component: AdminNewsPage,
       },
     ],
   },

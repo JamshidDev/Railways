@@ -2,24 +2,39 @@
   <v-app class="overflow-y-visible">
     <v-main>
       <router-view />
+      <loader-view :loading="isLoading"></loader-view>
     </v-main>
   </v-app>
 </template>
 
 <script>
+import LoaderView from "./components/AppLoader.vue";
 import { mapActions } from "vuex";
 export default {
+  components: {
+    LoaderView,
+  },
   name: "App",
   data() {
-    return {};
+    return {
+      isLoading: true,
+    };
   },
   created() {
+    addEventListener("load", () => {
+      this.isLoading = false;
+    });
     window.addEventListener("scroll", this.handleScroll);
     window.addEventListener("resize", this.reportWindowSize);
   },
   destroyed() {
     window.removeEventListener("scroll", this.handleScroll);
     window.addEventListener("resize", this.reportWindowSize);
+  },
+  updated() {
+    addEventListener("load", () => {
+      this.isLoading = false;
+    });
   },
   methods: {
     ...mapActions([
@@ -45,7 +60,6 @@ export default {
   font-family: "Montserrat", sans-serif !important;
 }
 .font-montserrat {
-  font-size: 20px;
   font-family: "Montserrat", sans-serif !important;
 }
 .banner_bg {
@@ -59,5 +73,8 @@ export default {
   text-transform: uppercase;
   text-align: center;
   font-family: "Montserrat", sans-serif !important;
+}
+.cursor_hover_pointer:hover {
+  cursor: pointer;
 }
 </style>
