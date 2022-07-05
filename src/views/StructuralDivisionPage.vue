@@ -12,7 +12,7 @@
                 <thead>
                   <tr>
                     <th class="text-left text-h6">
-                      <v-btn color="primary" large text>Lavozimi</v-btn>
+                      <v-btn color="green" large text>Lavozimi</v-btn>
                     </th>
                     <th class="text-left font-weight-bold">
                       <v-btn color="green" text large>
@@ -30,7 +30,11 @@
                 <tbody>
                   <tr v-for="(item, i) in workers" :key="i">
                     <td class="py-2">
-                      <v-chip class="ma-2" color="primary">
+                      <v-chip
+                        class="ma-2 font-weight-medium"
+                        color="green"
+                        text-color="white"
+                      >
                         {{ item.position }}
                       </v-chip>
                     </td>
@@ -78,7 +82,7 @@ import Avatar_7 from "../assets/employee/avatar_7.jpg";
 import Avatar_8 from "../assets/employee/avatar_8.jpg";
 import Avatar_9 from "../assets/employee/avatar_9.jpg";
 import Avatar_10 from "../assets/employee/avatar_10.jpg";
-import Avatar_11 from "../assets/employee/avatar_11.jpg";
+// import Avatar_11 from "../assets/employee/avatar_11.jpg";
 import Avatar_12 from "../assets/employee/avatar_12.jpg";
 import Avatar_13 from "../assets/employee/avatar_13.jpg";
 import Avatar_14 from "../assets/employee/avatar_14.jpg";
@@ -99,7 +103,7 @@ export default {
           avatar: Avatar_1,
         },
         {
-          position: `  Boshqarma boshlig'i o'rinbosari v.b`,
+          position: `  Boshqarma boshlig'i o'rinbosari `,
           fullName: ` Saidova Feruza Anvarovna`,
           contact: `4-88-18`,
           visitDays: `Har kuni | 09:00-18:00`,
@@ -120,18 +124,25 @@ export default {
           avatar: Avatar_19,
         },
         {
-          position: `Bosh mutahassis`,
+          position: `Bosh mutaxassis`,
           fullName: `Raximova Surayyo Saidmuratovna  `,
           contact: `4-94-16`,
           visitDays: ``,
           avatar: Avatar_16,
         },
         {
-          position: `Bosh mutahassis`,
+          position: `Bosh mutaxassis`,
           fullName: `Tashkuziyeva Sevara Kaxramonovna`,
           contact: `4-11-85`,
           visitDays: ``,
           avatar: Avatar_9,
+        },
+        {
+          position: `Bosh mutaxassis`,
+          fullName: `Minbayeva Ra'no Yo'ldashevna`,
+          contact: `4-93-57`,
+          visitDays: ``,
+          avatar: Avatar_15,
         },
         {
           position: `Ishchi kadrlar bo'limi boshlig'i`,
@@ -141,11 +152,18 @@ export default {
           avatar: Avatar_8,
         },
         {
-          position: `Bosh mutahassis`,
+          position: `Bosh mutaxassis`,
           fullName: `Kirgizova Nargis Murodullayevna`,
           contact: `4-98-26`,
           visitDays: ``,
           avatar: Avatar_14,
+        },
+        {
+          position: `Yetakchi mutaxassis`,
+          fullName: `Atajanov Sardor Baxtiyarovich`,
+          contact: `4-82-03`,
+          visitDays: ``,
+          avatar: Avatar_18,
         },
         {
           position: `Bo'lim boshlig'i`,
@@ -154,15 +172,9 @@ export default {
           visitDays: ``,
           avatar: Avatar_7,
         },
+
         {
-          position: `Yetakchi mutahassis`,
-          fullName: `Atajanov Sardor Baxtiyarovich`,
-          contact: `4-82-03`,
-          visitDays: ``,
-          avatar: Avatar_18,
-        },
-        {
-          position: `Bosh mutahassis`,
+          position: `Bosh mutaxassis`,
           fullName: `Sarimsakova Nodira Zakirjanovna`,
           contact: `4-16-46`,
           visitDays: ``,
@@ -176,12 +188,13 @@ export default {
           avatar: Avatar_13,
         },
         {
-          position: `Bosh mutaxassis`,
-          fullName: `Minbayeva Ra'no Yo'ldashevna`,
-          contact: `4-93-57`,
+          position: `Yetakchi mutaxassis`,
+          fullName: `Ibragimov Shuxrat Shoyizoqovich`,
+          contact: `4-90-22`,
           visitDays: ``,
-          avatar: Avatar_15,
+          avatar: Avatar_4,
         },
+
         //  {
         //   position: `Yordamchi Nimadir`,
         //   fullName: `Shadiyev Shaxruz Baxtiyor o'g'li`,
@@ -189,13 +202,7 @@ export default {
         //   visitDays: ``,
         //   avatar: Avatar,
         // },
-        {
-          position: `1-toifali mutaxassis`,
-          fullName: `G'aniyev Raxmatillo Asatovich`,
-          contact: `4-19-07`,
-          visitDays: ``,
-          avatar: Avatar_12,
-        },
+
         {
           position: `Bosh mutaxassis`,
           fullName: `Xadjimuratov Botirjon Baxadirovich`,
@@ -204,12 +211,13 @@ export default {
           avatar: Avatar_10,
         },
         {
-          position: `Yetakchi mutaxassis`,
-          fullName: `Ibragimov Shuxrat Shoyizoqovich`,
-          contact: `4-90-22`,
+          position: `1-toifali mutaxassis`,
+          fullName: `G'aniyev Raxmatillo Asatovich`,
+          contact: `4-19-07`,
           visitDays: ``,
-          avatar: Avatar_4,
+          avatar: Avatar_12,
         },
+
         {
           position: `Bo'lim boshlig'i`,
           fullName: `Yuldasheva Fotimaxon Ibroximjanovna`,

@@ -19,6 +19,7 @@ import AllNewsPage from "@/views/AllNewsPage";
 import AdminPanel from "@/views/AdminPanel";
 import AdminNewsPage from "@/views/AdminNewsPage";
 import GalleryPage from "@/views/GalleryPage";
+import AddNewsPage from "@/views/AddNewsPage";
 Vue.use(VueRouter);
 
 const routes = [
@@ -115,6 +116,11 @@ const routes = [
         path: "/admin/news",
         name: "admin",
         component: AdminNewsPage,
+      },
+      {
+        path: "/admin/addnews",
+        name: "addnews",
+        component: AddNewsPage,
       },
     ],
   },

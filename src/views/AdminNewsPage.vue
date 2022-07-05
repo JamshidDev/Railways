@@ -4,7 +4,9 @@
       <v-col cols="12">
         <v-card elevation="0">
           <v-col cols="12" class="d-flex justify-end pb-10">
-            <v-btn color="primary" class="white--text">Adding</v-btn>
+            <v-btn color="primary" class="white--text" @click="pushAddNews()"
+              >Adding</v-btn
+            >
           </v-col>
         </v-card>
       </v-col>
@@ -61,6 +63,11 @@ export default {
     return {
       currentPage: 1,
     };
+  },
+  methods: {
+    pushAddNews() {
+      this.$router.push("/admin/addnews");
+    },
   },
 };
 </script>
