@@ -19,7 +19,7 @@
           </div>
         </v-col>
         <v-col xl="4" lg="4" sm="12" cols="12" md="5" class="px-sm-16 pt-sm-16">
-          <v-form v-model="valid">
+          <v-form ref="login_ref">
             <v-container>
               <v-row justify-lg="center">
                 <v-col lg="12" md="12">
@@ -31,8 +31,8 @@
                 </v-col>
                 <v-col cols="12" md="12" lg="12">
                   <v-text-field
-                    v-model="login"
-                    :rules="nameRules"
+                    v-model="user.login"
+                    :rules="loginRules"
                     label="Login"
                     required
                     dense
@@ -42,8 +42,8 @@
 
                 <v-col cols="12" md="12" lg="12">
                   <v-text-field
-                    v-model="password"
-                    :rules="emailRules"
+                    v-model="user.password"
+                    :rules="passRules"
                     label="Parol"
                     outlined
                     dense
@@ -51,7 +51,12 @@
                   ></v-text-field>
                 </v-col>
                 <v-col lg="12">
-                  <v-btn width="100%" depressed color="primary">
+                  <v-btn
+                    width="100%"
+                    depressed
+                    @click="login()"
+                    color="primary"
+                  >
                     Tizmga kirish
                   </v-btn>
                 </v-col>
@@ -68,20 +73,28 @@
 export default {
   data() {
     return {
-      valid: false,
-      login: "",
-      password: "",
-      nameRules: [
+      user: {
+        login: "jamshid.nok@.ajk",
+        password: "user12345",
+      },
+      loginRules: [
         (v) => !!v || "Login kiritilishi shart",
-        (v) =>
-          v.length <= 10 || "Login kamida 6 ta belgidan iborat bo'lishi shart",
+        (v) => /.+@.+/.test(v) || "Login to'g'riligini tekshiring",
       ],
-      emailRules: [
-        (v) => !!v || "Parol kiritilishi shart",
-        (v) =>
-          /.+@.+/.test(v) || "Parol kamida 8 ta belgidan iborat bo'lishi shart",
-      ],
+      passRules: [(v) => !!v || "Parol kiritilishi shart"],
     };
+  },
+  methods: {
+    login() {
+      if (this.$refs.login_ref.validate()) {
+        console.log(this.user);
+        this.$router.push("/admin");
+      } else {
+        setTimeout(() => {
+          this.$refs.login_ref.resetValidation();
+        }, 3000);
+      }
+    },
   },
 };
 </script>

@@ -145,6 +145,7 @@
               :key="i"
               color="indigo"
               class="px-4 rounded"
+              @click="pushRouter(item.link)"
             >
               <v-list-item-icon>
                 <v-icon v-text="item.icon" color="primary"></v-icon>
@@ -160,7 +161,7 @@
         </v-list>
       </v-navigation-drawer>
 
-      <v-main class="grey lighten-2 min-hight-screen">
+      <v-main class="white lighten-2 px-2 pt-4">
         <router-view></router-view>
       </v-main>
     </div>
@@ -202,11 +203,17 @@ export default {
       },
     ],
     items: [
-      { text: "Statistika", icon: "mdi-chart-pie" },
-      { text: "Murojatlar", icon: "mdi-email-seal" },
-      { text: "Yangiliklar", icon: "mdi-new-box" },
+      { text: "Statistika", icon: "mdi-chart-pie", link: "/admin/statistic" },
+      { text: "Murojatlar", icon: "mdi-email-seal", link: "/admin/report" },
+      { text: "Yangiliklar", icon: "mdi-new-box", link: "/admin/news" },
     ],
   }),
+  methods: {
+    pushRouter(link) {
+      console.log();
+      this.$router.push(link);
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>
@@ -216,11 +223,5 @@ export default {
   & i {
     color: white !important;
   }
-}
-.min-hight-screen {
-  min-height: 100vh;
-}
-.width-screen {
-  min-width: 100%;
 }
 </style>
