@@ -8,59 +8,176 @@
         <v-card class="mx-xl-16 px-lg-4 px-xl-4 mx-lg-16 mb-16">
           <v-card-text>
             <div class="text-h6">
-              “O‘zbekiston temir yo‘llari” АJ Nizomi boshqaruv raisining
-              birinchi o‘rinbosari А.S.Shukurov tomonidan 30.03.2017 yilda
-              tasdiqlangan va Tadbirkorlik subektlarini davlat ro‘yxatidan
-              o‘tkazish “Yagona darcha” markazida 4142-son bilan ro‘yxatga
-              olingan. O‘zbekiston Respublikasi Prezidentining 2015-yil
-              24-apreldagi “Аksiyadorlik jamiyatlarida zamonaviy korporativ
-              boshqaruv uslublarini joriy etish chora-tadbirlari to‘g‘risida” gi
-              PF-4720-sonli farmoni hamda “O‘zbekiston temir yo‘llari” DАTK
-              Kengashi va yagona aksiyadorining 2015-yil 30-apreldagi №59-sonli
-              qo‘shma yig‘ilishi qaroriga muvofiq, tarkibiy boʼlinmalari
-              nomlanishini qonun talablariga muvofiqlashtirish maqsadida,
-              “O‘zbekiston temir yo‘llari” DАTK boshqaruv raisining 2015-yil
-              2-iyundagi “Tarkibiy bo‘linmalari nomlanishini qonun talablariga
-              muvofiqlashtirish to‘g‘risida” gi №249-N-sonli buyrug‘iga asosan
-              “O‘zbekiston temir yo‘llari” DАTK nomi “O‘zbekiston temir
-              yo‘llari” aksiyadorlik jamiyatiga o‘zgartirilgan va O‘zbekiston
-              Respublikasi Аdliya vazirligida 2015-yil 25-mayda davlat
-              ro‘yxatidan o‘tkazilgan. O‘zbekiston Respublikasi Vazirlar
-              Mahkamasining 2016-yil 28-oktyabrdagi “O‘zbekiston temir yo‘llari”
-              АJ “Boshqaruv faoliyatini takomillashtirish chora-tadbirlari
-              to‘g‘risida” gi 375-sonli qaroriga asosan Qarshi mintaqaviy temir
-              yo‘l uzeli “O‘zbekiston temir yo‘llari” АJ tashkiliy tuzilmasiga
-              kiritilgan. Nizomga asosan uzelning asosiy vazifalari quyidagilar:
-              aholi va xo‘jalik subektlarini temir yo‘l tashishlariga bo‘lgan
-              extiyojini to‘la va o‘z vaqtida qondirish; tashuvlar mintaqaviy
-              bozori konyunkturasini o‘rganish ularning infratuzilmasini
-              shakllantirish, shuningdek temir yo‘l tarmoqlarini rivojlantirish
-              chora-tadbirlarini amalga oshirish; temir yo‘l transporti xizmat
-              ko‘rsatiladigan mijozlar yukini o‘z vaqtida yuklar butligini
-              taʼminlagan holda manziliga yetkazish; temir yo‘l transportining
-              xizmat ko‘rsatiladigan hudud doirasida barqaror va xavfsiz
-              ishlashini taʼminlash, foydalanuvchilarga keng ko‘lamda temir yo‘l
-              xizmatlarini ko‘rsatish; qurilish-montaj pudrat ishlarini mukammal
-              va joriy taʼmirlash (elektr uskunalarini, aloqa va SSB
-              qurilmalari) ni amalga oshirish; joylardagi davlat hokimiyati va
-              boshqaruv organlari bilan birgalikda temir yo‘l transporti
-              bo‘linmalarining moddiy-texnika bazasini mustahkamlashga doir
-              chora-tadbirlar majmuasini amalga oshirish; xizmat ko‘rsatiladigan
-              hududdagi temir yo‘l tarmoqlarining barqaror ishlashini hamda
-              temir yo‘llarining o‘tkazish qobiliyatini oshirish chora
-              tadbirlarini ishlab chiqish va amalga oshirish; O‘zbekiston
-              Respublikasi chegaralari orqali yuk va yo‘lovchilarni tashish
-              borasida joylardagi bojxona va soliq organlari, chegara xizmati
-              bilan aniq muvofiqlashtirilgan holda o‘zaro hamkorlikni
-              taʼminlash.
+              <p class="m-0 my-1 font-weight-bold">
+                Boshqarmaning asosiy vazifalari va funksiyalari:
+              </p>
+              <p class="m-0 my-2 font-italic">
+                - kadrlarni tayyorlash, tanlash, ishga joylashgirish, malakasini
+                oshirish va kayta tayyorlash orqali yukori salohatga ega kadrlar
+                zaxirasini shakllantirish va ulardan samarali foydalanishga
+                yo’naltirilgan boshkaruv va kadrlar bilan ta’minlash tizimini
+                yaratish;
+              </p>
+
+              <p class="m-0 my-2 font-italic">
+                - “O’zbekiston temir yo’llari” AJning markaziy apparata va
+                tarkibiy bo’linmalari shtatlarini tashabbuskor, yuqori malakali
+                mutaxassislar bilan to’ldirish;
+              </p>
+
+              <p class="m-0 my-2 font-italic">
+                - raxbar kadrlar zaxirasini shakllantirish, O’zbekistan
+                Respublikasi Prezident Administratsiyasi va Vazirlar Maxkamasi
+                bilan kelishilgan xolda raxbarlarni lavozimga tayinlash, boshqa
+                ishga o’tkazish, o’z lavozimidan ozod kilish uchun zarur
+                materiallarni tayyorlash;
+              </p>
+
+              <p class="m-0 my-2 font-italic">
+                - “O’zbekiston temir yo’llari” AJ tarkibiy bo’linmalari va
+                korxonalaridagi mehnat intizomi holati, ommaviy kasb xodimlari
+                almashinuvi va qo’nimsizligi sabablarini o’rganish, mehnat
+                intizomini mustaxkamlash va kadrlarni yetaklab qolish bo’yicha
+                chora-tadbirlarni ishlab chiqish va amalga oshirish, bandlik
+                bo’yicha davlat siyosatini ilgari surish;
+              </p>
+
+              <p class="m-0 my-2 font-italic">
+                - “O’zbekistan temir yo’llari” AJ va uning tarkibiy bo’linmalari
+                raxbar kadrlar faoliyatini o’rganish va ular bo’yicha Jamiyat
+                boshqaruvi raisiga takliflar berish;
+              </p>
+
+              <p class="m-0 my-2 font-italic">
+                - “O’zbekistan temir yo’llari” AJ va uning tarkibiy
+                bo’linmalarida mehnat qonunchiligining buzilishi, o’zaro yaqin
+                qarindoshlik aloqalari va korrupsiyaning oldini olish maqsadida,
+                kadrlar siyosati va Jamiyat tarkibiga kiruvchi barcha
+                tashkilotlar raxbarlarining faoliyatini doimiy ravishda
+                o’rganish, natijalari bo’yicha qarorlar tayyorlash xamda
+                qonunchilikka muvofik tartibda ularning yechimi bo’yicha Jamiyat
+                raxbariyatiga takliflar kiritish;
+              </p>
+
+              <p class="m-0 my-2 font-italic">
+                - Yuqoridagi xolatlarning oldini olish, shuningdek
+                korxonalarning boshkaruv tizimini takomillashtirish maqsadida,
+                o’z lavozimida 3 yildan 5 yilgacha ishlab kelgan raxbar
+                kadrlarni rotatsiya qilish bo’yicha Jamiyat boshqaruvi raisiga
+                takliflar berish;
+              </p>
+
+              <p class="m-0 my-2 font-italic">
+                - “O’zbekistan temir yo’llari” AJ raxbarlari va
+                mutaxassislarining, Xamdo’stlik mamlakatlaridagi vakolatxonalar
+                va xalqaro transport tashkilotlarida faoliyatini tashkil etish
+                hamda xalqaro iqtisodiy ilmiy-texnik xamkorlikni ta’minlash
+                uchun xizmat safarlariga yuborilishini rasmiylashtirish;
+              </p>
+
+              <p class="m-0 my-2 font-italic">
+                - “O’zbekistan temir yo’llari” AJ raxbarlari va xodimlarini
+                davlat mukofotlari, rag’batlantirishlar, qimmatbaxo sovg’alar
+                bilan takdirlash uchun takliflar va tegishli ma’lumotlarni
+                takdim etish, mukofotlar xisobi bo’yicha ma’lumotlar bazasini
+                yuritish;
+              </p>
+
+              <p class="m-0 my-2 font-italic">
+                - O’zbekistan Respublikasi va xorijiy davlatlarning ta’lim
+                muassasalari va markazlarida mutaxassislarni tayyorlash, kayta
+                tayyorlash va malakasini oshirish orkali temir yul korxonalarini
+                yukori malakali mutaxassislar va ommaviy kasb kadrlari bilan
+                ta’minlash, ushbu yo’nalishdagi rejaning sifatli bajarilishini
+                ta’minlash bo’yicha monitoring olib borish;
+              </p>
+
+              <p class="m-0 my-2 font-italic">
+                - mutaxassislarga bo’lgan extiyojning yillik monitoringini
+                hisobga olgan xolda, tarmok ta’lim muassasalariga kabul rejasini
+                shakllantirish, uning bajarilishi to’grisida xisobot tayyorlash
+                va O’zbekistan Respublikasi davlat o’rganlariga yetkazish;
+              </p>
+              <p class="m-0 my-2 font-italic">
+                - Jamiyat raxbariyatining tasarrufdagi ta’lim muassasalari
+                faoliyati bilan bog’lik bo’lgan buyru1lari va farmoyishlari
+                loyihalarini tayyorlash. Tarmok ta’lim muassasalari
+                bitiruvchilarini Jamiyat tasarrufidagi korxonalarga taqsimlash
+                va kelgusida ish bilan ta’minlashda samarali yordam ko’rsatish;
+              </p>
+
+              <p class="m-0 my-2 font-italic">
+                - “O’zbekistan temir yo’llari” AJ raxbarlari, mutaxassislar va
+                xodimlarining attestatsiyadan o’tkazilishini tashkil etish.
+                Raxbarlar va mutaxassislarning kasbiy, axlokiy va ishbilarmonlik
+                sifatlarini o’rganish xamda natijalarini taxlil kilish;
+              </p>
+
+              <p class="m-0 my-2 font-italic">
+                - O’zbekiston Respublikasi Prezidenta Administratsiyasi,
+                Vazirlar Maxkamasi, shuningdek “O’zbekiston temir yo’llari” AJ
+                raxbariyati bilan kelishilgan holda raxbar xodimlar nomzodlarini
+                muvofiqlashtirish va lavozimga tayinlash, tarkibiy
+                bo’linmalardagi mutaxassislarni joy-joyiga qo’yish va ulardan
+                foydalanishni tartibga soluvchi me’yoriy, uslubiy hujjatlar va
+                nomenklaturalarni ishlab chiqish, raxbar xodimlarning shaxsiy
+                yig’ma jildlarini yuritish va xisobga olish;
+              </p>
+
+              <p class="m-0 my-2 font-italic">
+                - “O’zbekiston temir yo’llari” AJ tarkibiy bo’linmalari va
+                korxonalarida xodimlarni ishga kabul qilish, boshka lavozimga
+                o’tkazish, mehnat shartnomalarini bekor qilish va intizomiy jazo
+                choralarini qo’llash, mehnat daftarchalarini va boshqa kadrlarga
+                oid xujjatlarni yuritishda mehnat konunchiligining to’g’ri
+                qo’llanilishini nazorat qilish. Kadrlarga oid xujjatlarni
+                to’g’ri yuritish bo’yicha yuriqnoma, uslubiy qo’llanma va
+                huquqiy adabiyotlar bilan ta’minlashga qaratilgan tashkiliy
+                ishlarni amalga oshirish;
+              </p>
+
+              <p class="m-0 my-2 font-italic">
+                - “O’zbekiston temir yo’llari” AJ boshqaruvi raisining 2006 yil
+                20 martdagi 76-N son buyrug’i bajarilishini ta’minlash va ushbu
+                buyruq asosida boshqarma, markazlar xamda Jamiyat tarkibidagi
+                boshka tashkilotlar rahbarlari tomonidan tavsiya etilgan
+                xodimlarni ishga qabul qilish, boshqa lavozimga o’tkazishga
+                rozilik berish yoki rad etishni kelishish;
+              </p>
+              <p class="m-0 my-2 font-italic">
+                - shaxsiy masalalar bo’yicha fuqarolarni qabul qilish,
+                murojatlar, kelib tushgan xatlar, ariza va shikoyatlarni ko’rib
+                chiqish, ularni nazoratini tashkil etish va ular bo’yicha javob
+                va tushuntirishlar tayyorlash;
+              </p>
+              <p class="m-0 my-2 font-italic">
+                - maxfiylik rejimiga rioya qilish, maxfiy va shaxsiy
+                ma’lumotlarni oshkor qilishdan himoya qilish bo’yicha choralarni
+                amalga oshirish;
+              </p>
+              <p class="m-0 my-2 font-italic">
+                - oliy va o’rta maxsus ma’lumotga ega bo’lgan rahbar xodimlar va
+                mutaxassislar soni, tarkibi va lavozimlar harakatini hisobga
+                olish. Shaxsiy tarkib va rag’batlantirishga oid buyruqlarni
+                tayyorlash va rasmiylashtirish. Yillik hisobot tayyorlash;
+              </p>
+              <p class="m-0 my-2 font-italic">
+                - “O’zbekiston temir yo’llari” AJ miqyosidagi tantanalar va
+                uchrashuvlarni o’tkazishga tayyorgarlik ko’rish va ishtirok
+                etish;
+              </p>
+              <p class="m-0 my-2 font-italic">
+                - “O’zbekiston temir yo’llari” AJ xodimlari tomonidan Ichki
+                mehnat tartib-qoidalarining bajarilishini keng nazorat qilish.
+              </p>
             </div>
           </v-card-text>
           <v-card-text>
             <v-img
-              lazy-src="https://qarshimtu.uz/b6cc6b5efd3658382f4c17fa8b8e87b3.jpg"
+              :lazy-src="conpany"
               max-height="auto"
               max-width="100%"
-              src="https://qarshimtu.uz/b6cc6b5efd3658382f4c17fa8b8e87b3.jpg"
+              :src="conpany"
             ></v-img>
           </v-card-text>
         </v-card>
@@ -70,7 +187,14 @@
 </template>
 
 <script>
-export default {};
+import conpany from "../assets/companyPicture/company.jpg";
+export default {
+  data() {
+    return {
+      conpany,
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped></style>

@@ -36,7 +36,7 @@
             </v-col>
             <v-divider></v-divider>
             <v-col cols="12" class="d-flex justify-space-between">
-              <v-btn color="primary" text>Edit</v-btn>
+              <v-btn color="primary" text @click="pushEditNews()">Edit</v-btn>
               <v-btn color="error" text>Delete</v-btn>
             </v-col>
           </v-card-action>
@@ -67,6 +67,9 @@ export default {
   methods: {
     pushAddNews() {
       this.$router.push("/admin/addnews");
+    },
+    pushEditNews() {
+      this.$router.push("/admin/editnews");
     },
   },
 };

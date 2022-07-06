@@ -16,7 +16,7 @@
                 </v-card-title>
               </v-card-header>
               <v-card-body>
-                <v-card-text class="text-h6">
+                <v-card-text class="text-h6 font-italic font-weight-medium">
                   1994 yilning 7 noyabrida O'zbekiston Respublikasi
                   Prezidentining PF-982 sonli farmoni asosida, O'zbekiston
                   Respublikasi hududida joylashgan temir yo'l transporti tarmoq
