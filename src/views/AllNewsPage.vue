@@ -37,6 +37,7 @@
 </template>
 
 <script>
+import NewsService from "../services/service/newsService"
 import AllNewsCard from "@/components/AllNewsCard";
 import { mapGetters } from "vuex";
 export default {
@@ -51,9 +52,19 @@ export default {
   computed: {
     ...mapGetters(["get_allNews"]),
   },
+  methods:{
+
+
+    getAllNews(){
+      NewsService.getAll().then((res)=>{
+        console.log(res);
+      })
+    }
+  },
   mounted() {
     console.log(this.get_allNews);
     this.news = this.get_allNews;
+    this.getAllNews()
   },
 };
 </script>

@@ -120,7 +120,7 @@
             Profil
           </v-btn>
           <v-card-actions>
-            <v-btn color="error" text elevation="0" block @click="menu = false">
+            <v-btn color="error" text elevation="0" block @click="logOut()">
               Chiqish
             </v-btn>
           </v-card-actions>
@@ -204,7 +204,7 @@ export default {
     ],
     items: [
       { text: "Statistika", icon: "mdi-chart-pie", link: "/admin/statistic" },
-      { text: "Murojatlar", icon: "mdi-email-seal", link: "/admin/report" },
+      { text: "Murojatlar", icon: "mdi-email-seal", link: "/admin/apeal" },
       { text: "Yangiliklar", icon: "mdi-new-box", link: "/admin/news" },
     ],
   }),
@@ -213,6 +213,10 @@ export default {
       console.log();
       this.$router.push(link);
     },
+    logOut(){
+      sessionStorage.removeItem("token");
+      this.$router.push("/login")
+    }
   },
 };
 </script>

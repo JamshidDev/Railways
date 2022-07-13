@@ -6,6 +6,7 @@
       </v-col>
       <v-col
         lg="4"
+        xl="5"
         md="6"
         sm="12"
         cols="12"
@@ -35,31 +36,6 @@
                 </v-expansion-panel-content>
               </v-expansion-panel>
             </v-expansion-panels>
-          </v-row>
-        </v-container>
-      </v-col>
-      <v-col cols="12">
-        <h3 class="service_title mt-16 pt-16">Ochiq ma‘lumotlar</h3>
-      </v-col>
-      <v-col cols="12" class="mt-8 pb-16">
-        <v-container>
-          <v-row justify="center">
-            <v-simple-table style="width: 100%">
-              <template v-slot:default>
-                <thead>
-                  <tr>
-                    <th class="text-left">Name</th>
-                    <th class="text-left">Calories</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr v-for="item in desserts" :key="item.name">
-                    <td>{{ item.name }}</td>
-                    <td>{{ item.calories }}</td>
-                  </tr>
-                </tbody>
-              </template>
-            </v-simple-table>
           </v-row>
         </v-container>
       </v-col>
@@ -126,49 +102,6 @@ export default {
         {
           question: `Yo’l hujjatlarini rasmiylashtirish uchun qanday hujjatlar kerak bo’ladi?`,
           answer: `Yo’l hujjatlarini rasmiylashtirish yo’lovchining shaxsini tasdiqlovchi hujjat (passport, harbiy guvohnoma), 16 yoshgacha bo’lgan bolalar uchun, bunda ota-onaning pasportida bolaning yopishtirilgan sur’ati bo’lishi lozim, tug’ilganlik haqida guvohnoma asosida  amalga oshiriladi.Voyaga yetmagan bolalar qonuniy vakillari(ota-ona, buvisi, xolasi)bilan O’zbekiston Respublikasi hududida tashqariga chiqishda ishonchnoma va 16 yoshga yetmagan bolaga tug’ilganlik to’risidagi guvohnoma o’rniga O’zbekiston Respublikasi fuqarosi guvohnomasi bo’lishi shart.`,
-        },
-      ],
-
-      desserts: [
-        {
-          name: "Frozen Yogurt",
-          calories: 159,
-        },
-        {
-          name: "Ice cream sandwich",
-          calories: 237,
-        },
-        {
-          name: "Eclair",
-          calories: 262,
-        },
-        {
-          name: "Cupcake",
-          calories: 305,
-        },
-        {
-          name: "Gingerbread",
-          calories: 356,
-        },
-        {
-          name: "Jelly bean",
-          calories: 375,
-        },
-        {
-          name: "Lollipop",
-          calories: 392,
-        },
-        {
-          name: "Honeycomb",
-          calories: 408,
-        },
-        {
-          name: "Donut",
-          calories: 452,
-        },
-        {
-          name: "KitKat",
-          calories: 518,
         },
       ],
     };

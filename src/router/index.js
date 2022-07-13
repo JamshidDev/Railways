@@ -22,6 +22,7 @@ import GalleryPage from "@/views/GalleryPage";
 import AddNewsPage from "@/views/AddNewsPage";
 import EditNewsAdmin from "@/views/EditNewsAdmin";
 import StatisticAdmin from "@/views/StatisticAdmin";
+import ApealPage from '@/views/ApealPage'
 Vue.use(VueRouter);
 
 const routes = [
@@ -133,6 +134,11 @@ const routes = [
         path: "/admin/statistic",
         name: "statistic",
         component: StatisticAdmin,
+      },
+      {
+        path: "/admin/apeal",
+        name: "apela",
+        component: ApealPage,
       },
     ],
   },

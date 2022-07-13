@@ -391,8 +391,8 @@ export default {
   top: 10px;
   position: fixed;
   z-index: 200;
-  width: calc(100% - 40px) !important;
-  margin: 0px auto;
+  width:calc(100% - 40px) !important;
+  margin: 0px 20px;
   background-color: white;
 }
 </style>
