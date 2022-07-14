@@ -7,7 +7,7 @@
     </v-row>
     <v-row class="white pt-4 mb-4">
       <v-col cols="12" lg="8" xl="8" md="7">
-        <news-banner :newsItem="get_currentlyNews"></news-banner>
+        <news-banner :newsItem="currentNews"></news-banner>
       </v-col>
       <v-col
         cols="12"
@@ -20,12 +20,8 @@
           So'ngi yalgiliklar
         </div>
         <news-mini-card
-          v-for="(item, i) in get_recentlyNews"
-          :key="i"
-          :title="item.title"
-          :date="item.date"
-          :picture="item.picture"
-          :id="item.id"
+          :recentlyNew="recentlyNews"
+          @change_current_news="changeCurrent"
         ></news-mini-card>
         <v-btn
           color="green"
@@ -43,36 +39,49 @@
 </template>
 
 <script>
+import newsService from "../services/service/newsService";
 import NewsBanner from "@/components/NewsBanner.vue";
 import NewsMiniCard from "@/components/NewsMiniCard.vue";
-import { mapGetters, mapActions } from "vuex";
 export default {
   components: {
     NewsBanner,
     NewsMiniCard,
   },
   data() {
-    return {};
+    return {
+      recentlyNews: [],
+      currentNews: false,
+    };
   },
   created() {
-    this.changeNews();
-    this.set_recentlyNews();
+    this.getRecently();
+    
+    if (this.$route.params.id == 0) {
+      this.getCurrentlynews();
+    } else {
+      this.getCurrentlynews(this.$route.params.id);
+    }
   },
-  computed: {
-    ...mapGetters(["get_currentlyNews", "get_recentlyNews"]),
-  },
+  watch: {},
   methods: {
-    ...mapActions(["set_currentlyNews", "set_recentlyNews"]),
     pushRouter() {
       this.$router.push("/allnews");
     },
-    changeNews() {
-      let id = this.$route.params.id;
-      if (id == 0) {
-        this.set_currentlyNews();
-      } else {
-        this.set_currentlyNews(id);
-      }
+    changeNews() {},
+    getRecently() {
+      newsService.getRecently().then((res) => {
+        this.recentlyNews = res.data.data;
+      });
+    },
+    getCurrentlynews(payload) {
+      newsService.getOneNews(payload).then((res) => {
+        this.currentNews = res.data.data;
+      });
+    },
+    changeCurrent(id) {
+      this.currentNews = false;
+      this.getCurrentlynews(id);
+      window.scrollTo(0, 0);
     },
   },
   mounted() {},

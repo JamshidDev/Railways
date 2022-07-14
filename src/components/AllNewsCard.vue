@@ -1,12 +1,14 @@
 <template>
   <v-card class="mx-auto" color="white lighten-4" width="100%" elevation="1">
     <v-hover v-slot="{ hover }">
-      <v-img :aspect-ratio="16 / 9" :src="pics" :lazy-src="pics">
+      <v-img :aspect-ratio="16 / 9" :src="getImg(pics)" :lazy-src="pics">
         <v-expand-transition>
           <div
             v-if="hover"
-            class="d-flex transition-fast-in-fast-out grey darken-4 v-card--reveal white--text"
+            class="d-flex transition-fast-in-fast-out grey darken-4 v-card--reveal white--text cursor_hover_pointer"
             style="height: 100%"
+            @click="pushToNewsPage(id)"
+
           >
             Batafsil
           </div>
@@ -54,6 +56,9 @@ export default {
     pushToNewsPage(id) {
       this.$router.push(`/news/${id}`);
     },
+    getImg(picture){
+      return `https://calm-fjord-14028.herokuapp.com/news/${picture}`
+    }
   },
 };
 </script>
