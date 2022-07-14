@@ -55,12 +55,7 @@ export default {
   },
   created() {
     this.getRecently();
-    
-    if (this.$route.params.id == 0) {
-      this.getCurrentlynews();
-    } else {
-      this.getCurrentlynews(this.$route.params.id);
-    }
+    this.getCurrentlynews(this.$route.params.id);
   },
   watch: {},
   methods: {
@@ -75,11 +70,13 @@ export default {
     },
     getCurrentlynews(payload) {
       newsService.getOneNews(payload).then((res) => {
+        console.log(res.data.data);
         this.currentNews = res.data.data;
+        console.log(this.currentNews);
       });
     },
     changeCurrent(id) {
-      this.currentNews = false;
+      console.log(id);
       this.getCurrentlynews(id);
       window.scrollTo(0, 0);
     },

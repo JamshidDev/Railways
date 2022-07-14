@@ -62,7 +62,7 @@ export default {
       this.$emit("change_current_news", id)
     },
     getImg(picture) {
-      return `https://calm-fjord-14028.herokuapp.com/news/${picture}`;
+      return `https://calm-fjord-14028.herokuapp.com/news/picture/${picture}`;
     },
   },
 };

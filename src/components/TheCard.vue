@@ -1,15 +1,15 @@
 <template>
   <div class="card_container">
     <div class="card_content">
-      <span class="content_date"> 06/07/2022</span>
+      <span class="content_date"> {{lenta.created}}</span>
       <span class="content_view" @click="pushToNews(2)"> Batafsil... </span>
       <img
         class="card_picture"
-        src="https://qarshimtu.uz/38127533664561.jpg"
+        :src="getImg(lenta.picture)"
         alt="Card picture not found"
       />
       <span class="card_title">
-        "Ilg'or tajriba maktabi" mavzusida seminar-trening
+        {{lenta.title}}
       </span>
     </div>
   </div>
@@ -17,10 +17,14 @@
 
 <script>
 export default {
+  props:["lenta"],
   methods: {
     pushToNews(id) {
       this.$router.push(`/news/${id}`);
     },
+     getImg(picture){
+      return `https://calm-fjord-14028.herokuapp.com/news/picture/${picture}`
+    }
   },
 };
 </script>

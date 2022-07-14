@@ -57,7 +57,7 @@ export default {
       this.$router.push(`/news/${id}`);
     },
     getImg(picture){
-      return `https://calm-fjord-14028.herokuapp.com/news/${picture}`
+      return `https://calm-fjord-14028.herokuapp.com/news/picture/${picture}`
     }
   },
 };

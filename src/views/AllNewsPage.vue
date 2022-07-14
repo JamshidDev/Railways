@@ -27,6 +27,8 @@
         ></all-news-card>
       </v-col>
     </v-row>
+
+    
     <!-- Loader -->
      <v-row class="pt-10 pb-6 px-2" v-else >
       <v-col
