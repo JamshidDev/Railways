@@ -55,7 +55,7 @@ export default {
           id: 1,
           title: "Murojat yuborish",
           subtitle:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recte dicis; Ita enim vivunt quidam, ut eorum vita refellatur oratio. Sed tament.",
+            `O'zbekiston temir yo'llari AJ ning Personalni boshqarish va kadrlar tayorlash boshqarmasiga murojat yo'llashingiz mumkin`,
           icon: "mdi mdi-file-document-edit",
           cardURL: "/reference",
         },
@@ -63,7 +63,7 @@ export default {
           id: 2,
           title: "Murojatni tekshirish",
           subtitle:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recte dicis; Ita enim vivunt quidam, ut eorum vita refellatur oratio. Sed tament.",
+            `Yuborgan murojatingiz 7 kundan 30 kungacha tekshirilishi mumkin, Murojatingizni tekshirish uchun murojat kodini kiriting `,
           icon: "mdi mdi-text-box-search",
           cardURL: "/card-url",
         },

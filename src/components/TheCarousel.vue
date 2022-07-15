@@ -58,7 +58,7 @@ export default {
         case "xl":
           return "auto";
         default:
-          return "100 vh";
+          return "60 vh";
       }
     },
   },

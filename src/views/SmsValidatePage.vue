@@ -5,24 +5,25 @@
         <v-form ref="sms_validate">
           <v-container>
             <v-col cols="12" lg="12" class="mb-16 px-0">
-              <v-card elevation="0" class="white lighten-3 mx-0">
+              <v-card elevation="6" class="light-blue lighten-4 mx-0">
                 <v-card-title
-                  class="text-6 green lighten-2 white--text text-uppercase text-center"
-                  >Telefon raqamingizni tasdiqlang</v-card-title
+                  class="text-6 red lighten-1 white--text text-uppercase text-center"
+                  >Tasdiqlash</v-card-title
                 >
                 <v-card-text class="text-subtitle-1">
-                  <h4>
+                  <p class="font-weight-bold">
                     Biz sizning telefon raqamingizga sms kod(tasdiqlash kodi)
                     yubordik, Siz mazkur kodni kiritish orqali murojatni
                     rasmiylashtirgan hisoblanasiz. Agar murojat
                     rasmiylashtirilmasa murojat hech qanday kuchga ega
                     bo'lmaydi.
-                  </h4>
+                  </p>
                 </v-card-text>
               </v-card>
             </v-col>
-            <v-row class="white py-6 px-4" justify="center">
-              <v-col cols="12" sm="6" md="4" lg="4" xl="4">
+            <v-card elevation="6" class="light-blue lighten-4">
+              <v-row class=" py-6 px-4" justify="center">
+              <v-col cols="12" sm="3" md="2" lg="2" xl="2">
                 <v-text-field
                   v-model="smsCode"
                   :rules="codRules"
@@ -34,10 +35,10 @@
                 ></v-text-field>
               </v-col>
               <v-col cols="12" class="d-flex justify-space-between">
-                <v-btn width="auto" outlined color="warning"> Orqaga </v-btn>
+                <v-btn width="auto" large color="warning"   @click="goBack()"> Orqaga </v-btn>
                 <v-btn
                   width="auto"
-                  outlined
+                  large
                   @click="smsValidate()"
                   color="primary"
                 >
@@ -45,6 +46,7 @@
                 </v-btn>
               </v-col>
             </v-row>
+            </v-card>
           </v-container>
         </v-form>
       </v-col>
@@ -105,6 +107,9 @@ export default {
           this.$refs.user_reference.resetValidation();
         }, 3000);
       }
+    },
+    goBack(){
+      this.$router.push("/reference")
     },
     controlAlert(color, text, icon, time) {
       this.alertIcon = icon;
