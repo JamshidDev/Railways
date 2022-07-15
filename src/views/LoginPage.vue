@@ -30,7 +30,7 @@
           </div>
         </v-col>
         <v-col xl="4" lg="4" sm="12" cols="12" md="5" class="px-sm-16 pt-sm-16">
-          <the-notefication :notefication="notefication"></the-notefication>
+          <the-notefication :notefication="notefication" :NoteColor="'error'" :NoteText="`Login yoki Parol noto'g'ri`" :NoteType="'error'"></the-notefication>
           <v-form ref="login_ref">
             <v-container>
               <v-row justify-lg="center">
@@ -47,7 +47,7 @@
                 </v-col>
                 <v-col cols="12" md="12" lg="12">
                   <v-text-field
-                    v-model="user.login"
+                    v-model.trim="user.login"
                     :rules="loginRules"
                     label="Login"
                     required
@@ -58,12 +58,17 @@
 
                 <v-col cols="12" md="12" lg="12">
                   <v-text-field
-                    v-model="user.password"
+                    v-model.trim="user.password"
                     :rules="passRules"
                     label="Parol"
                     outlined
                     dense
                     required
+                  :append-icon="show1 ? 'mdi-eye' : 'mdi-eye-off'"
+                  :type="show1 ? 'text' : 'password'"
+                  @click:append="show1 = !show1"
+                  aria-autocomplete="on"
+                  autocomplete="on"
                   ></v-text-field>
                 </v-col>
                 <v-col lg="12">
@@ -93,9 +98,10 @@ export default {
   data() {
     return {
       user: {
-        login: "jamshid.nok@.ajk",
-        password: "user12345",
+        login: "",
+        password: "",
       },
+      show1:false,
       notefication: false,
       loginRules: [
         (v) => !!v || "Login kiritilishi shart",

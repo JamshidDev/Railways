@@ -15,5 +15,28 @@ const getLenta= async function(){
     return await axios.get(`/news/lenta`)
 }
 
+const paginationNews =async function (page_number, page_amount) {
+    return axios.get(`/admin/news/all/${page_number}/${page_amount}`)
+}
+const getOneNewsAdmin = async function (id){
+    return await axios.get(`/admin/news/one/${id}`)
+}
 
-export default {getAll, getRecently, getOneNews, getLenta}
+const updateNews = async function (payload){
+    return axios.put(`/admin/news/update`, payload);
+}
+const updateNoPicture = async function (payload){
+    return axios.put(`/admin/news/updatenews`, payload);
+
+}
+
+const createNews = async function (payload){
+    return axios.post("/admin/news/add", payload)
+}
+
+// delete new from database
+const deleteNews = async function (id){
+    return await axios.delete(`/admin/news/delete/${id}`)
+}
+
+export default {getAll, getRecently, getOneNews, getLenta, paginationNews, getOneNewsAdmin, updateNews, updateNoPicture, createNews, deleteNews}

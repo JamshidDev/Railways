@@ -1,12 +1,15 @@
 <template>
   <v-container fluid>
     <v-row class="pb-16">
-      <v-col cols="12">
-        <v-card>
-          <v-card-title class="font-weight-bold"
+       <v-col cols="12">
+        <v-card elevation="1" class="rounded-0 blue lighten-5">
+          <v-card-title class="font-weight-medium text-uppercase"
             >Yangilik qo'shish</v-card-title
           >
-          <v-divider></v-divider>
+        </v-card>
+      </v-col>
+      <v-col cols="12" >
+        <v-card class="rounded-0 blue lighten-5">
           <v-card-text>
             <v-form ref="news_ref">
               <v-col cols="12">
@@ -103,6 +106,7 @@
 </template>
 
 <script>
+import newsService from "@/services/service/newsService";
 import { mdiCalendarRange, mdiEye } from "@mdi/js";
 export default {
   data() {
@@ -128,7 +132,18 @@ export default {
   },
   methods: {
     createNews() {
-      if (this.$refs.news_ref.validate()) {
+      if (this.$refs.news_ref.validate() && this.news.files.length>0) {
+        console.log(this.news);
+        const form = new FormData()
+        form.append("title", this.news.title)
+        form.append("text", this.news.text)
+        form.append("picture", this.news.files[0])
+        newsService.createNews(form).then((res)=>{
+          this.$router.push("/admin/news")
+        }).catch(()=>{
+          console.log(error);
+        })
+        
       } else {
         setTimeout(() => {
           this.$refs.news_ref.resetValidation();

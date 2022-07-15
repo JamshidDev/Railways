@@ -1,6 +1,8 @@
 import axios from "axios";
+import router from "../router/index"
 const instance = axios.create({
     baseURL: `https://calm-fjord-14028.herokuapp.com`
+    // baseURL:`http://localhost:5000`
 });
 
 instance.interceptors.request.use(function (config) {
@@ -16,7 +18,9 @@ instance.interceptors.request.use(function (config) {
 instance.interceptors.response.use(
     response => response,
     error => {
-        console.log(error);
+        if(error.response.status==401){
+            router.push("/login")
+        }
         return Promise.reject(error)
     }
 );

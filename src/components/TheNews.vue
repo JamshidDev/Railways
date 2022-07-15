@@ -12,7 +12,7 @@
           </h3>
         </v-hover>
       </v-col>
-      <v-col v-for="item in lentaNews" :key="item._id" class="d-flex justify-center" cols="12" sm="6" md="3" lg="4">
+      <v-col v-for="item in lentaNews" :key="item._id" class="d-flex justify-center" cols="12" sm="6" md="3" lg="4" xl="3">
         <news-item :lenta="item"></news-item>
       </v-col>
     </v-row>

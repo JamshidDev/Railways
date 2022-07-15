@@ -7,7 +7,7 @@
     </v-row>
     <v-row class="white pt-4 mb-4">
       <v-col cols="12" lg="8" xl="8" md="7">
-        <news-banner :newsItem="currentNews"></news-banner>
+        <news-banner :newsItem="currentNews[0]"></news-banner>
       </v-col>
       <v-col
         cols="12"

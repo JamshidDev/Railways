@@ -2,13 +2,13 @@
     <v-alert
       v-if="notefication"
       border="left"
-      color="red"
+      :color="NoteColor"
       text
       class="notefiction"
-      type="error"
+      :type="NoteType"
       icon="mdi-alert-circle-outline"
       transition="slide-x-reverse-transition"
-    > Parol yoki login noto'g'ri</v-alert>
+    > {{NoteText}}</v-alert>
 </template>
 <script>
 export default {
@@ -16,14 +16,26 @@ export default {
         notefication:{
             type:Boolean,
             default:false
+        },
+        NoteType:{
+          type:String,
+          default:"success"
+        },
+        NoteColor:{
+          type:String,
+          default:"green"
+        },
+        NoteText:{
+          type:String,
+          default:"Muvofaqiyatli bajarildi"
         }
     },
 };
 </script>
 <style lang="scss">
 .notefiction{
-  position: absolute !important;
-  z-index: 200;
+  position: fixed !important;
+  z-index: 9999 !important;
   right: 30px;
   bottom: 30px;
   min-width: 200px !important;

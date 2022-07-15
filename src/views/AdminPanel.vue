@@ -18,7 +18,7 @@
         "
       ></v-app-bar-nav-icon>
 
-      <v-toolbar-title class="white--text">Admin Panel</v-toolbar-title>
+      <v-toolbar-title class="white--text">Admin Panel NOK</v-toolbar-title>
       <v-spacer></v-spacer>
 
       <v-menu
@@ -132,11 +132,30 @@
         v-model="drawer"
         :mini-variant.sync="mini"
         color="white"
-        class="px-1"
+        class="px-1 blue lighten-5"
         mini-variant-width="60"
         app
       >
         <!-- Sidebar -->
+        <v-card class="blue accent-2" elevation="0">
+          <v-list>
+            <v-list-item>
+              <v-list-item-avatar>
+                <v-img src="https://cdn.vuetifyjs.com/images/john.jpg"></v-img>
+              </v-list-item-avatar>
+
+              <v-list-item-content>
+                <v-list-item-title class="white--text font-weight-medium"
+                  >Jamshid Raximov</v-list-item-title
+                >
+                <v-list-item-subtitle class="yellow--text text-caption"
+                  >NewsAdmin</v-list-item-subtitle
+                >
+              </v-list-item-content>
+            </v-list-item>
+          </v-list>
+          <v-divider></v-divider>
+        </v-card>
 
         <v-list active-class class="px-2">
           <v-list-item-group v-model="selectedItem">
@@ -148,7 +167,7 @@
               @click="pushRouter(item.link)"
             >
               <v-list-item-icon>
-                <v-icon v-text="item.icon" color="primary"></v-icon>
+                <v-icon v-text="item.icon" :color="item.color"></v-icon>
               </v-list-item-icon>
               <v-list-item-content>
                 <v-list-item-title
@@ -203,9 +222,12 @@ export default {
       },
     ],
     items: [
-      { text: "Statistika", icon: "mdi-chart-pie", link: "/admin/statistic" },
-      { text: "Murojatlar", icon: "mdi-email-seal", link: "/admin/apeal" },
-      { text: "Yangiliklar", icon: "mdi-new-box", link: "/admin/news" },
+      { text: "Statistic", icon: "mdi-chart-pie", link: "/admin/statistic", color:"red" },
+      { text: "Reports", icon: "mdi-email-seal", link: "/admin/apeal", color:"primary" },
+      { text: "News", icon: "mdi-new-box", link: "/admin/news", color:"primary" },
+      { text: "Setting", icon: "mdi-chart-pie", link: "/admin/news", color:"green" },
+      { text: "Version", icon: "mdi-chart-pie", link: "/admin/news", color:"red" },
+      { text: "Profile", icon: "mdi-chart-pie", link: "/admin/news", color:"green" },
     ],
   }),
   methods: {
@@ -213,10 +235,10 @@ export default {
       console.log();
       this.$router.push(link);
     },
-    logOut(){
+    logOut() {
       sessionStorage.removeItem("token");
-      this.$router.push("/login")
-    }
+      this.$router.push("/login");
+    },
   },
 };
 </script>

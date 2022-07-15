@@ -2,7 +2,7 @@
   <div class="card_container">
     <div class="card_content">
       <span class="content_date"> {{lenta.created}}</span>
-      <span class="content_view" @click="pushToNews(2)"> Batafsil... </span>
+      <span class="content_view" @click="pushToNews(lenta._id)"> Batafsil... </span>
       <img
         class="card_picture"
         :src="getImg(lenta.picture)"

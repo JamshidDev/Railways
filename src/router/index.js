@@ -126,7 +126,7 @@ const routes = [
         component: AddNewsPage,
       },
       {
-        path: "/admin/editnews",
+        path: "/admin/editnews/:id",
         name: "editnews",
         component: EditNewsAdmin,
       },
