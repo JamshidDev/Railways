@@ -1,7 +1,7 @@
 <template>
   <div class="card_container">
     <div class="card_content">
-      <span class="content_date"> {{lenta.created}}</span>
+      <span class="content_date"> {{format.dataFormatter(lenta.created)}}</span>
       <span class="content_view" @click="pushToNews(lenta._id)"> Batafsil... </span>
       <img
         class="card_picture"
@@ -16,8 +16,14 @@
 </template>
 
 <script>
+import Formatter from "../ulit/helper"
 export default {
   props:["lenta"],
+  data(){
+    return{
+      format: Formatter,
+    }
+  },
   methods: {
     pushToNews(id) {
       this.$router.push(`/news/${id}`);

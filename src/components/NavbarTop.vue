@@ -221,7 +221,7 @@ export default {
     &:hover {
       & > .submenu_container {
         opacity: 1;
-        top: 50px;
+        top: 35px;
         visibility: visible;
       }
     }
@@ -239,7 +239,7 @@ export default {
       display: flex;
       flex-direction: column;
       opacity: 0;
-      transition: all 0.3s ease-in-out;
+      transition: all 0.4s ease-in-out;
       box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
       & > .submenu_item {
         width: 100%;

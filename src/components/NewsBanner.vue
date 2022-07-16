@@ -14,7 +14,7 @@
       <v-col cols="12" class="d-flex justify-space-between">
         <v-btn text>
           <v-icon color="green" class="mr-2">{{ dateIcon }}</v-icon>
-          {{ newsItem.created }}
+          {{format.dataFormatter(newsItem.created)  }}
         </v-btn>
         <v-btn text>
           <v-icon color="green" class="mr-2">{{ eyesIcon }}</v-icon>
@@ -86,6 +86,7 @@
 </template>
 
 <script>
+import Formatter from "../ulit/helper"
 import { mdiCalendarRange, mdiEye } from "@mdi/js";
 export default {
   props: ["newsItem"],
@@ -93,6 +94,7 @@ export default {
     return {
       dateIcon: mdiCalendarRange,
       eyesIcon: mdiEye,
+      format: Formatter,
     };
   },
   methods:{

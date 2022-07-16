@@ -12,38 +12,67 @@
           </h3>
         </v-hover>
       </v-col>
-      <v-col v-for="item in lentaNews" :key="item._id" class="d-flex justify-center" cols="12" sm="6" md="3" lg="4" xl="3">
+      <template v-if="lentaNews.length>0">
+          <v-col
+        v-for="item in lentaNews"
+        :key="item._id"
+        class="d-flex justify-center"
+        cols="12"
+        sm="6"
+        md="3"
+        lg="4"
+        xl="3"
+      >
         <news-item :lenta="item"></news-item>
       </v-col>
+      </template>
+      <template v-else>
+        <v-col
+          class="d-flex justify-center"
+          cols="12"
+          sm="6"
+          md="3"
+          lg="4"
+          xl="3"
+          v-for="i in 8"
+          :key="i"
+        >
+          <v-skeleton-loader
+            class="mx-auto"
+            width="100%"
+            type="card"
+          ></v-skeleton-loader>
+        </v-col>
+      </template>
     </v-row>
   </v-container>
 </template>
 
 <script>
-import newsService from '@/services/service/newsService'
+import newsService from "@/services/service/newsService";
 import NewsItem from "./TheCard.vue";
 
 export default {
   components: {
     NewsItem,
   },
-  data(){
-    return{
-      lentaNews:false
-    }
+  data() {
+    return {
+      lentaNews: false,
+    };
   },
-  created(){
-    this.getLenta()
+  created() {
+    this.getLenta();
   },
   methods: {
     pushToNews(id) {
       this.$router.push(`/news/${id}`);
     },
-    getLenta(){
-      newsService.getLenta().then((res)=>{
-        this.lentaNews = res.data.data
-      })
-    }
+    getLenta() {
+      newsService.getLenta().then((res) => {
+        this.lentaNews = res.data.data;
+      });
+    },
   },
 };
 </script>

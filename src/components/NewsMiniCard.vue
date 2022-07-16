@@ -22,7 +22,7 @@
           </v-hover>
           <v-btn text color="green" class="text-caption font-weight-medium">
             <v-icon color="green" class="mr-2">{{ dateIcon }}</v-icon>
-            {{ item.created }}
+            {{ format.dataFormatter(item.created) }}
           </v-btn>
         </v-col>
       </v-row>
@@ -44,6 +44,7 @@
 </template>
 
 <script>
+import Formatter from "../ulit/helper"
 import { mdiCalendarRange } from "@mdi/js";
 export default {
   props: {
@@ -55,6 +56,7 @@ export default {
   data() {
     return {
       dateIcon: mdiCalendarRange,
+      format: Formatter,
     };
   },
   methods: {

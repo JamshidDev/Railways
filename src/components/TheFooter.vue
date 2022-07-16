@@ -8,9 +8,11 @@
             alt="Footer logo not found"
           />
         </div>
-        <div class="content_text px-lg-10 mb-10">
-          Gliter partners with businesses across every major industry to make
-          amazing products and connect the dots between people to people
+        <div class="content_text px-lg-10 mb-4">
+          "O'zbekiston temir yo'llari" Aksiyadorlik Jamiyati Personalni boshqarish va kadrlar tayorlash boshqarmasining veb sahifasi
+        </div>
+         <div class="content_text px-lg-10 mb-10">
+          Saytdagi maʼlumotlardan foydalanish vaqtida manba sifatida nok.uz saytini koʻrsatish shart.
         </div>
         <div class="content_socials mb-8">
           <div class="social">
@@ -40,7 +42,7 @@
       <div class="contact_content mb-4">
         <div class="contact_title">Manzil:</div>
         <div class="contact_details">
-          2 Street Name, New York, United States of America
+          O‘zbekiston Respublikasi, Toshkent, 100060, Т. Shevchenko ko‘chasi, 7
         </div>
       </div>
       <div class="contact_content mb-4">
@@ -76,7 +78,9 @@
         <router-link to="/services">Ko'p so'raladigan savollar</router-link>
       </div>
       <div class="contact_content mb-4">
-        <router-link to="/services">Ochiq ma'lumotlar</router-link>
+        <router-link to="https://telegram.me/JAmacoder"
+          >Admin bilan bog'lanish</router-link
+        >
       </div>
       <div class="contact_content mb-4">
         <router-link to="/functional">Funksiya va vazifalar</router-link>
@@ -93,9 +97,21 @@
       class="pr-sm-10 px-12 px-md-4 mb-4 mt-16"
     >
       <h3 class="footer_contact_title mb-12">Statistika</h3>
+      <div class="contact_content mb-4">
+        <div class="contact_title">Oxirgi yangilanish</div>
+        <div class="contact_details">
+          16.07.2022 17:30:15
+        </div>
+      </div>
+       <div class="contact_content mb-4">
+        <div class="contact_title">Onlayn foydalanuvchilar soni:</div>
+        <div class="contact_details">
+          1 
+        </div>
+      </div>
     </v-col>
     <v-col cols="12">
-      <p class="copy_right pt-4">
+      <p class="copy_right pt-6 pb-8">
         Sayt <a href="https://jamacoder.uz/">Jamacoder</a> tomonidan ishlab
         chiqilgan.
       </p>
@@ -128,7 +144,7 @@ export default {};
   & > .content_text {
     width: 100%;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 15px;
   }
   .content_socials {
     display: flex;
@@ -166,7 +182,7 @@ export default {};
   & > a {
     text-decoration: none;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
     &:hover {
       color: #3f9f42;
@@ -176,7 +192,7 @@ export default {};
   & > .contact_title {
     color: #b8b8b9;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 15px;
     min-width: 100px;
   }
   & > .contact_details {
@@ -190,7 +206,7 @@ export default {};
   margin: 0px 20px;
   justify-content: center;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   border-top: 1px solid #ffffff;
   & > a {

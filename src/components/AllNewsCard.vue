@@ -22,7 +22,7 @@
       <v-hover v-slot="{ hover }">
         <div
           @click="pushToNewsPage(id)"
-          class="font-weight-medium font-montserrat mb-2 pt-2 cursor_hover_pointer"
+          class="font-weight-bold font-montserrat mb-2 pt-2 cursor_hover_pointer"
           :class="hover && 'text-decoration-underline'"
         >
           {{ title }}
@@ -45,11 +45,11 @@
 <script>
 export default {
   props: {
-    id: Number,
+    id: String,
     pics: String,
     title: String,
     text: String,
-    view: String,
+    view: Number,
     date: String,
   },
   methods: {

@@ -20,7 +20,7 @@
         <all-news-card
           :title="item.title"
           :view="item.views"
-          :date="item.created"
+          :date="format.dataFormatter(item.created)"
           :text="item.text"
           :pics="item.picture"
           :id="item._id"
@@ -70,6 +70,7 @@
 </template>
 
 <script>
+import Formatter from "../ulit/helper.js"
 import NewsService from "../services/service/newsService"
 import AllNewsCard from "@/components/AllNewsCard";
 import { mapGetters } from "vuex";
@@ -80,6 +81,7 @@ export default {
   data() {
     return {
       news: [],
+      format:Formatter,
     };
   },
   computed: {
