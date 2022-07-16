@@ -2,7 +2,7 @@
   <div class="leader_card_container">
     <div class="card_header">
       <div class="header_img">
-        <v-img :src="user_img" width="100%" height="auto" :lazy-src="user_img">
+        <v-img :src="user_img"  alt="16/9" :lazy-src="user_img">
           <template v-slot:placeholder>
             <v-row class="fill-height ma-0" align="center" justify="center">
               <v-progress-circular

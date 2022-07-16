@@ -4,6 +4,8 @@ import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify'
 
+import 'aos/dist/aos.css'; // You can also use <link> for style
+
 Vue.config.productionTip = false
 
 new Vue({

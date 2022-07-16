@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-card max-width="100%" class="cursor_hover_pointer">
-      <v-img :src="imgUrl" :lazy-src="imgUrl" max-width="100%">
+      <v-img :src="imgUrl" :lazy-src="imgUrl" max-width="100%" :aspect-ratio="16/9">
         <template v-slot:placeholder>
           <v-row class="fill-height ma-0" align="center" justify="center">
             <v-progress-circular

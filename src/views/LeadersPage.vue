@@ -8,10 +8,10 @@
     <v-row justify="center">
       <v-col
         cols="12"
-        sm="8"
-        md="5"
-        lg="4"
-        xl="4"
+        sm="6"
+        md="4"
+        lg="3"
+        xl="2"
         class="mb-6 px-sm-4 px-lg-2 px-md-0 px-8"
       >
         <leader-card-vue
@@ -30,11 +30,11 @@
     </v-row>
     <v-row justify="center" justify-md="space-beetwen" class="pb-16">
       <v-col
-        cols="12"
-        sm="8"
-        md="5"
-        lg="4"
-        xl="4"
+       cols="12"
+        sm="6"
+        md="4"
+        lg="3"
+        xl="2"
         class="mb-6 px-sm-4 px-lg-2 px-md-0 px-8 mx-md-1"
       >
         <leader-card-vue
@@ -52,10 +52,10 @@
       </v-col>
       <v-col
         cols="12"
-        sm="8"
-        md="5"
-        lg="4"
-        xl="4"
+        sm="6"
+        md="4"
+        lg="3"
+        xl="2"
         class="mb-6 px-sm-4 px-lg-2 px-md-0 px-8 mx-md-1"
       >
         <leader-card-vue

@@ -26,9 +26,9 @@
             disableOnInteraction: false,
           }"
         >
-          <swiper-slide v-for="book in books" :key="book.id">
+          <swiper-slide v-for="(gallery, i) in lentaGallery" :key="i">
             <div class="slide_img_container mb-16" @click="pushToGallery()">
-              <img :src="getImageUrl()" class="img-fluid" blank="true" />
+              <img :src="gallery.imgUrl" class="img-fluid" blank="true" />
             </div>
           </swiper-slide>
         </swiper>
@@ -38,6 +38,13 @@
 </template>
 
 <script>
+import gallery_1 from "@/assets/gallery/gallery_1.jpg";
+import gallery_5 from "@/assets/gallery/gallery_5.jpg";
+import gallery_17 from "@/assets/gallery/gallery_17.jpg";
+import gallery_18 from "@/assets/gallery/gallery_18.jpg";
+import gallery_19 from "@/assets/gallery/gallery_19.jpg";
+import gallery_22 from "@/assets/gallery/gallery_22.jpg";
+import gallery_23 from "@/assets/gallery/gallery_23.jpg";
 import { SwiperCore, Swiper, SwiperSlide } from "swiper-vue2";
 import { Pagination, Autoplay } from "swiper";
 SwiperCore.use([Pagination, Autoplay]);
@@ -51,46 +58,28 @@ export default {
   },
   data() {
     return {
-      books: [
+      lentaGallery: [
         {
-          id: 1,
-          title: "English Grammer",
-          amount: 67,
+          imgUrl: gallery_17,
+        },
+
+        {
+          imgUrl: gallery_5,
         },
         {
-          id: 2,
-          title: "Red books",
-          amount: 123,
+          imgUrl: gallery_1,
         },
         {
-          id: 3,
-          title: "Grammer 1",
-          amount: 34,
+          imgUrl: gallery_18,
         },
         {
-          id: 4,
-          title: "Grammer 2",
-          amount: 56,
+          imgUrl: gallery_19,
         },
         {
-          id: 5,
-          title: "Grammer 3",
-          amount: 23,
+          imgUrl: gallery_22,
         },
-        {
-          id: 6,
-          title: "Essential Grammer",
-          amount: 456,
-        },
-        {
-          id: 7,
-          title: "English Grammer",
-          amount: 67,
-        },
-        {
-          id: 8,
-          title: "English Grammer",
-          amount: 67,
+          {
+          imgUrl: gallery_23,
         },
       ],
     };
@@ -116,9 +105,6 @@ export default {
   },
 
   methods: {
-    getImageUrl() {
-      return `https://qarshimtu.uz/23116590653561.JPG`;
-    },
     onSwiper(swiper) {},
     onSlideChange() {},
     breakpoint() {},

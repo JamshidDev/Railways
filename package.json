@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@mdi/js": "^6.7.96",
+    "aos": "^3.0.0-beta.6",
     "axios": "^0.27.2",
     "core-js": "^3.8.3",
     "swiper-vue2": "^1.0.9",
