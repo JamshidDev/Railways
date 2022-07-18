@@ -8,6 +8,10 @@ const getAllAdmin = function(){
     return axios.get("/admin/all")
 }
 
+const getAdmin = function(){
+    return axios.get("/admin/one")
+}
+
 const updateAdmin = function(payload){
     return axios.put("/admin/update", payload);
 }
@@ -16,4 +20,4 @@ const deleteAdmin = function(){
     return axios.delete(`/admin/delete`)
 }
 
-export default {loginAdmin,getAllAdmin,  updateAdmin,deleteAdmin }
+export default {loginAdmin,getAllAdmin,  updateAdmin,deleteAdmin, getAdmin }

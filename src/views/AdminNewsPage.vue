@@ -5,7 +5,7 @@
         <v-card elevation="0">
           <v-col cols="12" class="d-flex justify-end pb-10">
             <v-btn color="primary" class="white--text" @click="pushAddNews()"
-              >Adding</v-btn
+              >Qo'shish</v-btn
             >
           </v-col>
         </v-card>

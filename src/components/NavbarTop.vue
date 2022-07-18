@@ -57,11 +57,6 @@
               >
             </div>
             <div class="submenu_item" @click="closeNavbar()">
-              <router-link to="/station" class="submenu_link_items"
-                >Stansiyalar</router-link
-              >
-            </div>
-            <div class="submenu_item" @click="closeNavbar()">
               <router-link to="/structuraldivision" class="submenu_link_items"
                 >Tarkibiy bo’linmalar</router-link
               >

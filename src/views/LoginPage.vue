@@ -93,6 +93,7 @@
 <script>
 import loginService from "../services/service/authService";
 import TheNotefication from "@/components/TheNotefication.vue";
+import { mapActions } from "vuex";
 export default {
   components: { TheNotefication },
   data() {
@@ -111,17 +112,18 @@ export default {
     };
   },
   methods: {
+    ...mapActions(["set_adminPermission", "set_adminDetails"]),
     login() {
       if (this.$refs.login_ref.validate()) {
-        console.log(this.user);
-        // this.$router.push("/admin");
         loginService
           .loginAdmin(this.user)
           .then((res) => {
+            this.set_adminPermission(res.data.data.permissions)
+            this.set_adminDetails(res.data.data)
             this.saveToken(res.data.access_token);
             this.$router.push("/admin");
           })
-          .catch((error) => {
+          .catch(() => {
             this.alertControl();
           });
       } else {
