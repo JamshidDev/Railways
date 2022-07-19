@@ -108,9 +108,10 @@ export default {
     }
     & > .card_title {
       position: absolute;
+      text-transform:none;
       bottom: 0px;
       color: #ffffff;
-      font-weight: 600;
+      font-weight: 500;
       font-size: 16px;
       display: block;
       padding: 4px 6px;

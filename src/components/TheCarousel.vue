@@ -13,34 +13,34 @@
 </template>
 
 <script>
-import banner_1 from "@/assets/peopleAvatar/banner_1.svg";
-import banner_2 from "@/assets/peopleAvatar/banner_2.png";
-import banner_6 from "@/assets/peopleAvatar/banner_6.svg";
-import banner_7 from "@/assets/peopleAvatar/banner_7.svg";
-import banner_8 from "@/assets/peopleAvatar/banner_8.svg";
-import banner_9 from "@/assets/peopleAvatar/banner_9.svg";
+import banner_1 from "@/assets/peopleAvatar/banner_nok.jpg";
+import banner_2 from "@/assets/peopleAvatar/banner_2.jpg";
+import banner_3 from "@/assets/peopleAvatar/banner_3.jpg";
+// import banner_7 from "@/assets/peopleAvatar/banner_7.svg";
+// import banner_8 from "@/assets/peopleAvatar/banner_8.svg";
+// import banner_9 from "@/assets/peopleAvatar/banner_9.svg";
 export default {
   data() {
     return {
       items: [
         {
-          src: banner_2,
-        },
-        {
           src: banner_1,
         },
         {
-          src: banner_6,
+          src: banner_2,
         },
         {
-          src: banner_7,
+          src: banner_3,
         },
-        {
-          src: banner_8,
-        },
-        {
-          src: banner_9,
-        },
+        // {
+        //   src: banner_7,
+        // },
+        // {
+        //   src: banner_8,
+        // },
+        // {
+        //   src: banner_9,
+        // },
       ],
     };
   },
