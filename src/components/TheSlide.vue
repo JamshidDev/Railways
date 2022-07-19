@@ -1,10 +1,10 @@
 <template>
   <v-container>
-    <v-row class="mb-16">
+    <v-row class="mb-16 pb-16">
       <v-col cols="12" class="mb-10">
         <v-hover v-slot="{ hover }">
           <h3
-            class="news_title cursor_hover_pointer"
+            class="news_title cursor_hover_pointer text-left"
             :class="hover && 'text-decoration-underline'"
             @click="pushToGallery()"
           >

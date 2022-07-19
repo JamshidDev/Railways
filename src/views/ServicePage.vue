@@ -63,9 +63,9 @@ export default {
           id: 2,
           title: "Murojatni tekshirish",
           subtitle:
-            `Yuborgan murojatingiz 7 kundan 30 kungacha tekshirilishi mumkin, Murojatingizni tekshirish uchun murojat kodini kiriting `,
+            `Yuborgan murojatingiz 15 kundan 30 kungacha tekshirilishi mumkin, Murojatingizni tekshirish uchun murojat kodini kiriting `,
           icon: "mdi mdi-text-box-search",
-          cardURL: "/card-url",
+          cardURL: "/reportvalidate",
         },
       ],
       questions: [

@@ -23,6 +23,7 @@ import AddNewsPage from "@/views/AddNewsPage";
 import EditNewsAdmin from "@/views/EditNewsAdmin";
 import StatisticAdmin from "@/views/StatisticAdmin";
 import ApealPage from '@/views/ApealPage'
+import ReportVerifyPage from '@/views/ReportVerifyPage'
 Vue.use(VueRouter);
 
 const routes = [
@@ -106,6 +107,11 @@ const routes = [
         path: "/smsvalidate",
         name: "smsvalidate",
         component: SmsValidatePage,
+      },
+      {
+        path: "/reportvalidate",
+        name: "reportvalidate",
+        component: ReportVerifyPage,
       },
     ],
   },

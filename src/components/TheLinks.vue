@@ -132,6 +132,7 @@ export default {
     width: 100%;
     padding: 10px 20px;
     color: #ffffff;
+    font-size: 20px !important;
   }
 
   & > .card_content {

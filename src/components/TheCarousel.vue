@@ -1,5 +1,5 @@
 <template>
-  <v-carousel hide-delimiters show-arrows-on-hover :height="height" cycle>
+  <v-carousel  show-arrows-on-hover :height="height" cycle class="rounded-lg">
     <v-carousel-item
       v-for="(item, i) in items"
       :key="i"
@@ -48,17 +48,17 @@ export default {
     height() {
       switch (this.$vuetify.breakpoint.name) {
         case "xs":
-          return "500px";
+          return "300px";
         case "sm":
-          return "600px";
+          return "400px";
         case "md":
-          return "600px";
+          return "500px";
         case "lg":
-          return "auto";
+          return "500px";
         case "xl":
-          return "auto";
+          return "500px";
         default:
-          return "60 vh";
+          return "500px";
       }
     },
   },

@@ -1,7 +1,16 @@
 <template>
-  <v-container fluid style="padding: 0px">
-    <the-carousel></the-carousel>
-    <the-news></the-news>
+  <v-container fluid style="padding: 0px" class="banner_title">
+   <v-container>
+     <v-row class="pb-16 mb-16">
+      <v-col cols="12">
+        <the-carousel></the-carousel>
+      </v-col>
+      <v-col cols="12" xl="3" lg="3" md="6" sm="6"  v-for="thing in items" :key="thing.title" class="p-4">
+        <home-card :Structures="thing"></home-card>
+      </v-col>
+     </v-row>
+   </v-container>
+    <the-news class="pb-16 mb-16"></the-news>
     <the-slide></the-slide>
     <the-links></the-links>
     <the-banner></the-banner>
@@ -9,13 +18,36 @@
 </template>
 
 <script>
+import HomeCard  from "../components/HomeCard.vue"
 import TheCarousel from "@/components/TheCarousel.vue";
 import TheNews from "../components/TheNews.vue";
 import TheSlide from "@/components/TheSlide.vue";
 import TheLinks from "@/components/TheLinks.vue";
 import TheBanner from "@/components/TheBanner.vue";
 export default {
-  components: { TheCarousel, TheNews, TheLinks, TheBanner, TheSlide },
+  components: { TheCarousel, TheNews, TheLinks, TheBanner, TheSlide, HomeCard },
+  data(){
+    return{
+      items:[
+        {
+          title:`Kadrlar bo'limi`,
+          icon:"mdi-shield-account",
+        },
+         {
+          title:`Murojatlar bo'limi`,
+          icon:"mdi-chart-pie",
+        },
+         {
+          title:`O'quv bo'limi`,
+          icon:"mdi-school",
+        },
+         {
+          title:`Mukofatlash bo'limi`,
+          icon:"mdi-finance",
+        },
+      ]
+    }
+  }
 };
 </script>
 

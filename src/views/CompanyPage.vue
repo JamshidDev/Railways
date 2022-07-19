@@ -11,7 +11,7 @@
           v-for="(item, i) in companyList"
           :key="i"
         >
-          <v-col cols="12" xl="6" lg="8" md="10">
+          <v-col cols="12" xl="8" lg="8" md="10">
             <div data-aos="fade-left">
               <v-card class="px-xl-4 pt-xl-6 white" elevation="1">
                 <v-row>
@@ -205,11 +205,11 @@ export default {
       throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
 
       // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-      offset: 120, // offset (in px) from the original trigger point
+      offset: 10, // offset (in px) from the original trigger point
       delay: 0, // values from 0 to 3000, with step 50ms
       duration: 400, // values from 0 to 3000, with step 50ms
       easing: "ease", // default easing for AOS animations
-      once: false, // whether animation should happen only once - while scrolling down
+      once: true, // whether animation should happen only once - while scrolling down
       mirror: false, // whether elements should animate out while scrolling past them
       anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
     });
