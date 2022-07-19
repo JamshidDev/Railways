@@ -32,7 +32,11 @@
                         >
                         <v-list-item-content>
                           <v-list-item-title
-                            class="blu--text font-montserrat font-weight-bold text-no-wrap"
+                            class="
+                              blu--text
+                              font-montserrat font-weight-bold
+                              text-no-wrap
+                            "
                           >
                             {{ item.company_name }}
                           </v-list-item-title>
@@ -63,7 +67,7 @@
                         </v-list-item-content>
                       </v-list-item>
                       <v-list-item>
-                       <v-list-item-icon
+                        <v-list-item-icon
                           ><v-icon color="primary" size="26"
                             >mdi-account-star</v-icon
                           ></v-list-item-icon
@@ -91,10 +95,14 @@ import AOS from "aos";
 import company_11 from "../assets/companyPicture/company_11.jpg";
 import company_12 from "../assets/companyPicture/company_12.jpg";
 import company_13 from "../assets/companyPicture/company_13.jpg";
-
+import company_21 from "../assets/companyPicture/company_21.jpg";
 import company_31 from "../assets/companyPicture/company_31.jpg";
 import company_41 from "../assets/companyPicture/company_41.jpg";
 import company_51 from "../assets/companyPicture/company_51.png";
+import company_61 from "../assets/companyPicture/company_61.png";
+import company_71 from "../assets/companyPicture/company_71.png";
+import company_81 from "../assets/companyPicture/company_81.png";
+import company_91 from "../assets/companyPicture/company_91.png";
 import "aos/dist/aos.css";
 export default {
   data() {
@@ -109,16 +117,16 @@ export default {
           company_boos_avatar: company_12,
           company_structure: company_13,
         },
-         {
+        {
           company_name: `"Sogdiana Trans" Sho'ba Korxonasi`,
           company_adress: `Mirobod tumani Аmir Temur koʼchasi 4 uy`,
           company_phone: `+998 (71) 236-49-72`,
-          company_picture: company_11,
+          company_picture: company_21,
           company_boss_fullName: `Boboqulov Jamshid Nosirovich`,
           company_boos_avatar: company_12,
           company_structure: company_13,
         },
-         {
+        {
           company_name: `"O'ztemiryo'lkonteyner" Aksiyadorlik Jamiyati`,
           company_adress: `100060,Toshkent sh., Mirobod tumani, T.Shevchenko koʻchasi, 7`,
           company_phone: `+998 (78) 148-37-78`,
@@ -136,7 +144,7 @@ export default {
           company_boos_avatar: company_12,
           company_structure: company_13,
         },
-         {
+        {
           company_name: `Xovos tarmoq sanitariya epidemiologiya stansiyasi`,
           company_adress: `Sirdaryo viloyati Xovos tumani Xiyobon ko‘chasi-1uy`,
           company_phone: `21-137`,
@@ -145,7 +153,42 @@ export default {
           company_boos_avatar: company_12,
           company_structure: company_13,
         },
-        
+        {
+          company_name: `“Toshkent yo‘lovchi vagonlarini qurish va ta'mirlash zavodi” aksiyadorlik jamiyati`,
+          company_adress: `Toshkent shahar, Yakkasaroy tumani, Kichik xalqa yo‘li ko‘chasi, 8 uy`,
+          company_phone: `43-710`,
+          company_picture: company_61,
+          company_boss_fullName: `Dadaxodjaev Dilshod Farruxovich`,
+          company_boos_avatar: company_12,
+          company_structure: company_13,
+        },
+         {
+          company_name: `Ахborot-таhliliy media markazi `,
+          company_adress: `Тоshkent shahri, Mirobod tumani, Amir Temur shox ko‘chasi, 4 uy`,
+          company_phone: `+998(71) 236-49-92`,
+          company_picture: company_71,
+          company_boss_fullName: `Аlisher Аnvarovich  Baltabayev`,
+          company_boos_avatar: company_12,
+          company_structure: company_13,
+        },
+          {
+          company_name: `"Toshkent uzel aloqa va signallashtirish distansiyasi" Unitar Korxonasi`,
+          company_adress: `Toshkent shahar, Mirobod tumani, 1-Nukus tor ko'chasi, 3-uy`,
+          company_phone: `+998(71) 299-92-00`,
+          company_picture: company_81,
+          company_boss_fullName: `O'roqov Olimjon Xikmatulloyevich`,
+          company_boos_avatar: company_12,
+          company_structure: company_13,
+        },
+          {
+          company_name: `"Sardoba temir yo‘l agrosanoat majmuasi" Unitar Korxonasi`,
+          company_adress: `Toshkent shahar Mirobod tumani Amir Temur ko‘chasi 4-uy`,
+          company_phone: `+998(71) 299-92-00`,
+          company_picture: company_91,
+          company_boss_fullName: `Ollaberganov Ollabergan Xaitbayevich`,
+          company_boos_avatar: company_12,
+          company_structure: company_13,
+        },
       ],
     };
   },

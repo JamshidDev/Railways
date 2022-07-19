@@ -11,7 +11,7 @@
         sm="6"
         md="4"
         lg="3"
-        xl="2"
+        xl="3"
         class="mb-6 px-sm-4 px-lg-2 px-md-0 px-8"
       >
         <leader-card-vue
@@ -34,7 +34,7 @@
         sm="6"
         md="4"
         lg="3"
-        xl="2"
+        xl="3"
         class="mb-6 px-sm-4 px-lg-2 px-md-0 px-8 mx-md-1"
       >
         <leader-card-vue
@@ -55,7 +55,7 @@
         sm="6"
         md="4"
         lg="3"
-        xl="2"
+        xl="3"
         class="mb-6 px-sm-4 px-lg-2 px-md-0 px-8 mx-md-1"
       >
         <leader-card-vue
