@@ -24,6 +24,7 @@ import EditNewsAdmin from "@/views/EditNewsAdmin";
 import StatisticAdmin from "@/views/StatisticAdmin";
 import ApealPage from '@/views/ApealPage'
 import ReportVerifyPage from '@/views/ReportVerifyPage'
+import CompanyGroup from '@/views/CompanyGroup'
 Vue.use(VueRouter);
 
 const routes = [
@@ -56,6 +57,11 @@ const routes = [
         path: "/allnews",
         name: "allnews",
         component: AllNewsPage,
+      },
+      {
+        path: "/companygroup/:group",
+        name: "companygroup",
+        component: CompanyGroup,
       },
       {
         path: "/gallery",

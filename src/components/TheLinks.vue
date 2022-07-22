@@ -19,12 +19,12 @@
       >
         <swiper-slide v-for="book in books" :key="book.id">
           <div class="slide_card_container mb-16">
-            <div class="card_title mb-4">{{ book.title }}</div>
+            <div class="card_title mb-4 font-weight-medium">{{ book.title }}</div>
             <div class="card_content mb-10">
               <div class="card_logo">
                 <v-img :src="book.logo_url" alt="" class="rounded" />
               </div>
-              <div class="card_link">
+              <div class="card_link font-weight-medium">
                 <a :href="book.fullURL">{{ book.link }} </a>
               </div>
             </div>
@@ -133,6 +133,7 @@ export default {
     padding: 10px 20px;
     color: #ffffff;
     font-size: 20px !important;
+    text-transform: none !important;
   }
 
   & > .card_content {

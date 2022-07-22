@@ -30,20 +30,24 @@ export default {
     return{
       items:[
         {
-          title:`Kadrlar bo'limi`,
+          title:`Raxbar kadrlar bo'limi `,
           icon:"mdi-shield-account",
+          id:3,
         },
          {
-          title:`Murojatlar bo'limi`,
+          title:`Ishchi kadrlar bo'limi`,
           icon:"mdi-chart-pie",
+          id:0,
         },
          {
-          title:`O'quv bo'limi`,
+          title:`Kadrlar tayorlash va o'quv yurtlari bo'limi `,
           icon:"mdi-school",
+          id:2,
         },
          {
-          title:`Mukofatlash bo'limi`,
+          title:`Mukofatlash va unvon berish bo'limi`,
           icon:"mdi-finance",
+          id:1,
         },
       ]
     }

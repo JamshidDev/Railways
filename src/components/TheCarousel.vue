@@ -16,6 +16,7 @@
 import banner_1 from "@/assets/peopleAvatar/banner_nok.jpg";
 import banner_2 from "@/assets/peopleAvatar/banner_2.jpg";
 import banner_3 from "@/assets/peopleAvatar/banner_3.jpg";
+import banner_4 from "@/assets/peopleAvatar/banner_4.jpg";
 // import banner_7 from "@/assets/peopleAvatar/banner_7.svg";
 // import banner_8 from "@/assets/peopleAvatar/banner_8.svg";
 // import banner_9 from "@/assets/peopleAvatar/banner_9.svg";
@@ -31,6 +32,9 @@ export default {
         },
         {
           src: banner_3,
+        },
+          {
+          src: banner_4,
         },
         // {
         //   src: banner_7,

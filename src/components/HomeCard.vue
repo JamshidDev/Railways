@@ -5,6 +5,7 @@
               :elevation="hover ? 3 : 0"
               :class="{ 'on-hover': hover }"
               class="blue lighten-5 p-4 cursor_hover_pointer"
+              @click="pushRuoter(Structures.id)"
             >
            <v-card-text class="p-10">
          <v-row>
@@ -25,7 +26,12 @@
 </template>
 <script>
 export default {
-    props:["Structures"]
+    props:["Structures"],
+    methods:{
+      pushRuoter(group){
+        this.$router.push(`/companygroup/${group}`)
+      }
+    }
     
 }
 </script>

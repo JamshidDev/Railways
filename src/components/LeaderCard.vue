@@ -13,26 +13,45 @@
           </template>
         </v-img>
       </div>
-      <div class="header_title pt-6 text-center text-uppercase blue--text">
+      <div class=" header_subtitle font-weight-medium pt-6 text-center  blue--text">
         {{ user_position }}
       </div>
-      <div class="header_subtitle font-weight-medium pt-2">
+      <div class="header_title text-uppercase  pt-2 blue--text">
         {{ user_fullname }}
       </div>
     </div>
     <div class="card_body pt-8">
       <div class="body_text">
-        Bog‘lanish uchun telefon:
-        <a :href="'tel:' + user_tell"> {{ user_phone }}</a>
+        <!-- Bog‘lanish uchun telefon: -->
+        <v-chip class="ma-2" color="primary" outlined>
+          <v-icon left color="primary"> mdi-phone </v-icon>
+          {{ user_phone }}
+        </v-chip>
+        <!-- <a :href="'tel:' + user_tell"> {{ user_phone }}</a> -->
       </div>
       <div class="body_text">
-        E-mail:
+        <!-- E-mail:
         <a :href="'mailto:' + user_email"> {{ user_email }}</a>
+         -->
+        <v-chip class="ma-2" color="indigo" outlined>
+          <v-icon left color="indigo"> mdi-email-edit-outline </v-icon>
+          {{ user_email }}
+        </v-chip>
       </div>
-      <div class="body_text">{{ user_visittime }}</div>
+      <v-chip class="ma-2" color="orange" outlined>
+        <v-icon left color="orange"> mdi-clock-edit </v-icon>
+        {{ user_visittime }}
+      </v-chip>
+      <!-- <div class="body_text">{{ user_visittime }}</div> -->
     </div>
     <div class="card_action my-6 d-flex justify-space-between">
-      <v-btn color="primary" large rounded elevation="0" @click="openDialog()"
+      <v-btn
+        color="primary"
+        large
+        outlined
+        rounded
+        elevation="0"
+        @click="openDialog()"
         >Tarjimai hol</v-btn
       >
       <v-btn
@@ -40,6 +59,7 @@
         large
         rounded
         elevation="0"
+        outlined
         @click="opentObligations()"
         >Vazifalari</v-btn
       >
