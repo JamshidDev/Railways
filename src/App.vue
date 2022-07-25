@@ -17,13 +17,13 @@ export default {
   name: "App",
   data() {
     return {
-      isLoading: true,
+      isLoading: false,
     };
   },
   created() {
-    addEventListener("load", () => {
-      this.isLoading = false;
-    });
+    // addEventListener("load", () => {
+    //   this.isLoading = false;
+    // });
     window.addEventListener("scroll", this.handleScroll);
     window.addEventListener("resize", this.reportWindowSize);
   },
@@ -31,11 +31,11 @@ export default {
     window.removeEventListener("scroll", this.handleScroll);
     window.addEventListener("resize", this.reportWindowSize);
   },
-  updated() {
-    addEventListener("load", () => {
-      this.isLoading = false;
-    });
-  },
+  // updated() {
+  //   addEventListener("load", () => {
+  //     this.isLoading = false;
+  //   });
+  // },
   methods: {
     ...mapActions([
       "set_appScrollX",
