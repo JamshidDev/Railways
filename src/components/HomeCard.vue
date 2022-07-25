@@ -11,11 +11,11 @@
          <v-row>
               <v-col cols="4">
              <v-avatar size="60">
-                <v-icon size="60" :color="hover ? 'green' : 'primary'">{{Structures.icon}}</v-icon>
+                <v-icon size="40" :color="hover ? 'green' : 'primary'">{{Structures.icon}}</v-icon>
             </v-avatar>
            </v-col>
            <v-col cols="8">
-            <div  :class="hover ? 'indigo--text' : 'blue--text'" class="text-h6 text-uppercase text-left">
+            <div  :class="hover ? 'indigo--text' : 'blue--text'" class="text-body-2 font-weight-medium text-uppercase text-left">
                 {{Structures.title}}
             </div>
            </v-col>

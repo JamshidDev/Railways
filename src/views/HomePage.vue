@@ -1,7 +1,7 @@
 <template>
   <v-container fluid style="padding: 0px" class="banner_title">
-   <v-container>
-     <v-row class="pb-16 mb-16">
+   <v-container fluid>
+     <v-row class=" mb-16">
       <v-col cols="12">
         <the-carousel></the-carousel>
       </v-col>

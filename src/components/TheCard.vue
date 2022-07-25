@@ -89,13 +89,14 @@ export default {
     }
     & > .content_view {
       position: absolute;
-      top: 50%;
+      top: 40%;
       left: 40%;
       background: transparent;
+      text-transform: none !important;
       color: #ffffff;
       padding: 4px 12px;
       border-radius: 100px;
-      font-size: 18px;
+      font-size: 14px;
       transform: scale(0);
       font-weight: 600;
       transition: all 0.3s ease;
@@ -108,7 +109,7 @@ export default {
     }
     & > .card_title {
       position: absolute;
-      text-transform:none;
+      text-transform: none !important;
       bottom: 0px;
       color: #ffffff;
       font-weight: 500;
