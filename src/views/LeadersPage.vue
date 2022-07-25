@@ -122,24 +122,26 @@ export default {
           email: "vahobjonhusenovich@gmail.com",
           visitTime: "Qabul kunlari: Seshanba, Payshanba | 15:00-18:00",
           avatar: avatar_2,
-          obligations: ` Uzel faoliyati va uning ijro etuvchi apparatining umumiy
-              boshqaruvini amalga oshiradi; "O'zbekiston temir yo'llari"AJ nizom
-              talablari va uzelga yuklangan vazifalarni bajarishga shaxsan
-              mas‘ul; Uzel boshlig'i o'rinbosarlarining o'rtasida javobgarlikni
-              taqsimlaydi, uzel faoliyatini va masalalarini hal qilishda
-              ularning vakolatlarini belgilaydi; O'zbekiston Respublikasi
-              Prezidenti, Vazirlar Mahkamasi va Oliy Majlis normativ
-              hujjatlarining bajarilishini nazorat qiladi; "O'zbekiston temir
-              yo'llari" AJ buyruqlari va farmoyishlarini, uzel nizomida
-              ko'rsatilgan vazifalarni amalga oshiradi. Uzelning samaradorligini
-              ta'minlaydi, uning umumiy yakuniy natijalarini ta'minlaydi va
-              poyezdlar harakati xavfsizligini takomillashtirish bo'yicha
-              chora-tadbirlarni amalga oshiradi; Uzelning moliyaviy va xo'jalik
-              ishlarini rejalashtirish va kadrlar siyosatini amalga oshirish
-              bo'yicha nazorat qiladi. Uzel faoliyati masalalarini muhokama
-              qilish va hal qilishda adolatlilik prinsipini, iqtisodiy va
-              ma'muriy boshqaruv usullarining kombinatsiyasini, buyruqning
-              birligini va ahil jamoa prinsipini ta'minlaydi.`,
+          obligations: `<p class=”m-0 my-1”>Personalii boshkarish va kadrlar tayyorlash boshkarmasi boshlig'i quyidagi vazifalarni bajaradi: </p>
+<p class=”m-0 my-1”>-	boshqarma bo'limlari faoliyatini boshqarish va nazorat qilish; </p>
+
+<p class=”m-0 my-1”>-	jamiyat tarkibiy bulimlarida Uzbekistan Respublikasi Kdshunlari- ning, Uzbekistan Respublikasi Prezidenta va xukumatining farmon-lari va karorlarining, Uzbekistan Respublikasi Mexnat Kodeksining, “Uzbekistan temir yullari” AJ Ustavining, Ichki mexnat tartib koi- dalarining, jamiyat raxbariyatining buyruklari va topshiriklarining uz vaktida va sifatli bajarilishini nazorat kilish; </p>
+ 
+<p class=”m-0 my-1”>-	jamiyatning barcha korxonalari, tashkilotlari va tarkibiy bulinmala- rini ommaviy kasb egalari bilan taʼminlash ishlarini tashkil etish; </p>
+<p class=”m-0 my-1”>-	jamiyat tasarrufidagi korxonalar va tarkibiy bulinmalarda kadrlar kunimsizligi va mexnat intizomi xolatlarini nazorat kilish va kadr¬lar kunimsizligini kamaytirish va mexnat intizomini kuchaytirish buyicha chora-tadbirlar ishlab chikish; </p>
+
+<p class=”m-0 my-1”>-	ish xajmidan kelib chikkan xolda kelajakda ommaviy kasb kadrlariga bulgan extiyojni aniklash va jamiyatga karashli korxonalar kadrlar bulimi xodimlarining uz korxonalarida ishchi-xodimlar sonini ish xajmiga nisbatan muvofiklashtirish buyicha xarakatlarining tugriligi va konuniyligini nazorat kilish; </p>
+<p class=”m-0 my-1”>-	jamiyat tasarrufidagi korxonalar, tarkibiy bulinmalar, tashkilotlar va muassasalarning xodimlar bulimlari ishlarini nazorat kilish, kompleks tekshiruvlarda katnashish; </p>
+<p class=”m-0 my-1”>-	jamiyat tasarrufidagi korxonalar, tarkibiy bulinmalar, tashkilotlar va muassasalar tomonidan ijtimoiy rivojlanish buyicha rejalarning ishlab chikilishini va ularning amalga oshirilishini nazorat kilish; </p>
+<p class=”m-0 my-1”>-	jamiyat raxbariyati bilan kelishgan xolda kadrlar masalalariga oid maʼlumotlarni yukori turuvchi tashkilotlarga, jamiyat Bonщaruvi va Kengashiga takdim etish; </p>
+<p class=”m-0 my-1”>-	jamiyat mikyosidagi tantanali tadbirlarni tashkillashtirishda ishti- rok etish; </p>
+<p class=”m-0 my-1”>-	“Uzbekiston temir yullari” AJning sifat soxasidagi siyosatida kuzda tutilgan maksadlarni urganish va ularni uz xizmat vakolatlari doira- sida tatbik etish; </p>
+<p class=”m-0 my-1”>-	boshkarmaga kelib tushgan arizalar, shikoyatlar va takliflarni kurib chikishda va tegishli karor kabul kilishda katnashish; </p>
+<p class=”m-0 my-1”>-	jamiyat tasarrufidagi korxonalar, tarkibiy bulinmalar, tashkilotlar va muassasalar kadrlar bulimlari faoliyatini umumlashtirish, kadrlar kunimsizligi sabablarini urganish va uning oldini olish buyicha te¬gishli chora-tadbirlarni amalga oshirish; </p>
+<p class=”m-0 my-1”>-	ish sharoitlarini yaxshilash, ishchi-xodimlarga imtiyozlar berish buyicha yukori raxbariyatga takliflar kiritish; </p>
+<p class=”m-0 my-1”>-	jamiyat tasarrufidagi barcha korxonalar, tarkibiy bulinmalar, tashki¬lotlar va muassasalarni tegishli mutaxassis kadrlar bilan taʼminlash yuzasidan doimiy xamkorlikda ishlash; </p>
+<p class=”m-0 my-1”>-	axborot manbalari (internet)dan okilona foydalanish; </p>
+`,
           biography: `1983 yilda Buxoro viloyati Olot tumanida tug’ilganman.
 <p class=”m-0 my-1”>Millatim-O’zbek.</p>
 <p class=”m-0 my-1”>Ma’lumotim-Oliy. </p>

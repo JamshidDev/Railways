@@ -50,8 +50,8 @@
           <v-col
             cols="12"
             xl="3"
-            lg="3"
-            md="4"
+            lg="4"
+            md="6"
             sm="6"
             v-for="worker in group_1[index].workers"
             :key="worker.fullName"

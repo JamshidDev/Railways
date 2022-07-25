@@ -7,15 +7,12 @@
       <v-row justify="center">
         <v-col cols="11" xl="8" lg="8" md="10">
           <v-card>
-            <v-card-title class="blue white--text font-weight-bold">
+            <v-card-title class="blue white--text font-weight-medium">
               Murojadnini kodini kiriting
             </v-card-title>
             <v-card-text>
               <p class="text-lg-body-1 text-xl-body-1 blue--text pt-2 pl-2 text-caption">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                dolor omnis ex beatae, incidunt provident laborum quae
-                temporibus voluptas aperiam quia voluptatum eum quam ad
-                exercitationem pariatur ipsa molestias assumenda.
+                Murojatni tasdiqlash kodini kiritish orqali murojatingiz holatini bilib olishingiz mumkin.
               </p>
               <v-form>
                 <v-col cols="12">

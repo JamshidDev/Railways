@@ -132,7 +132,7 @@ export default {
     width: 100%;
     padding: 10px 20px;
     color: #ffffff;
-    font-size: 20px !important;
+    font-size: 16px !important;
     text-transform: none !important;
   }
 
@@ -155,7 +155,7 @@ export default {
     & > .card_link > a {
       text-decoration: none;
       color: #ffffff;
-      font-size: 18px;
+      font-size: 14px;
       text-transform: uppercase;
       transition: all 0.3s ease-in-out;
       &:hover {

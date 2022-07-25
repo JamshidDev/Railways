@@ -12,7 +12,7 @@
           "O'zbekiston temir yo'llari" Aksiyadorlik Jamiyati Personalni boshqarish va kadrlar tayorlash boshqarmasining veb sahifasi
         </div>
          <div class="content_text px-lg-10 mb-10">
-          Saytdagi maʼlumotlardan foydalanish vaqtida manba sifatida nok.uz saytini koʻrsatish shart.
+          Saytdagi maʼlumotlardan foydalanish vaqtida manba sifatida railwaynok.uz saytini koʻrsatish shart.
         </div>
         <div class="content_socials mb-8">
           <div class="social">
